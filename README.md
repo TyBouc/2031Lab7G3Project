@@ -27,3 +27,4 @@ OUT
 
 
 
+Use .txt files and copy into quartus VHD files
