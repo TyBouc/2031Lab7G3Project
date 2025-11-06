@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Thu Oct 23 09:04:45 2025
+Thu Nov  6 11:42:58 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -55,7 +55,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 23 09:04:45 2025           ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov  6 11:42:58 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; SCOMP                                           ;
 ; Top-level Entity Name           ; SCOMP_System                                    ;
@@ -184,36 +184,35 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+----------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library  ;
-+----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+----------+
-; HEX_DISP.vhd                     ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd                           ;          ;
-; DIG_OUT.vhd                      ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/DIG_OUT.vhd                            ;          ;
-; DIG_IN.vhd                       ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/DIG_IN.vhd                             ;          ;
-; clk_div.vhd                      ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/clk_div.vhd                            ;          ;
-; TIMER.vhd                        ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/TIMER.vhd                              ;          ;
-; SCOMP.vhd                        ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd                              ;          ;
-; SCOMP_System.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP_System.bdf                       ;          ;
-; HEX_DISP_6.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP_6.bdf                         ;          ;
-; PLL_main.vhd                     ; yes             ; User Wizard-Generated File             ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main.vhd                           ; PLL_main ;
-; PLL_main/PLL_main_0002.v         ; yes             ; User Verilog HDL File                  ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main/PLL_main_0002.v               ; PLL_main ;
-; altera_pll.v                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altera_pll.v          ;          ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;          ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;          ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;          ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;          ;
-; aglobal241.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc        ;          ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;          ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.inc            ;          ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altram.inc            ;          ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc          ;          ;
-; db/altsyncram_7d24.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/db/altsyncram_7d24.tdf                 ;          ;
-; IODemo1.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/IODemo1.mif                            ;          ;
-; lpm_clshift.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_clshift.tdf       ;          ;
-; lpm_bustri.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_bustri.tdf        ;          ;
-+----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+----------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+----------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                    ; Library  ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+----------+
+; HEX_DISP.vhd                     ; yes             ; User VHDL File                     ; C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd                                ;          ;
+; DIG_OUT.vhd                      ; yes             ; User VHDL File                     ; C:/GaTech/ECE2031/2031Lab7G3Project/DIG_OUT.vhd                                 ;          ;
+; DIG_IN.vhd                       ; yes             ; User VHDL File                     ; C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd                                  ;          ;
+; clk_div.vhd                      ; yes             ; User VHDL File                     ; C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd                                 ;          ;
+; TIMER.vhd                        ; yes             ; User VHDL File                     ; C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd                                   ;          ;
+; SCOMP.vhd                        ; yes             ; User VHDL File                     ; C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd                                   ;          ;
+; SCOMP_System.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP_System.bdf                            ;          ;
+; HEX_DISP_6.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP_6.bdf                              ;          ;
+; PLL_main.vhd                     ; yes             ; User Wizard-Generated File         ; C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd                                ; PLL_main ;
+; PLL_main/PLL_main_0002.v         ; yes             ; User Verilog HDL File              ; C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v                    ; PLL_main ;
+; altera_pll.v                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altera_pll.v          ;          ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;          ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;          ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc           ;          ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc        ;          ;
+; aglobal241.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc        ;          ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc         ;          ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.inc            ;          ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altram.inc            ;          ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc          ;          ;
+; db/altsyncram_7d24.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/GaTech/ECE2031/2031Lab7G3Project/db/altsyncram_7d24.tdf                      ;          ;
+; lpm_clshift.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_clshift.tdf       ;          ;
+; lpm_bustri.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_bustri.tdf        ;          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -276,13 +275,13 @@ on the Quartus Prime software download page.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                            ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-------------+
-; Name                                                                                 ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF         ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-------------+
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_7d24:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 2048         ; 16           ; --           ; --           ; 32768 ; IODemo1.mif ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                     ;
++--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                 ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------+
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_7d24:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 2048         ; 16           ; --           ; --           ; 32768 ; None ;
++--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -779,7 +778,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -789,45 +788,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 23 09:04:09 2025
+    Info: Processing started: Thu Nov  6 11:42:39 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file hex_disp.vhd
-    Info (12022): Found design unit 1: HEX_DISP-a File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 17
-    Info (12023): Found entity 1: HEX_DISP File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 9
+    Info (12022): Found design unit 1: HEX_DISP-a File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 17
+    Info (12023): Found entity 1: HEX_DISP File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dig_out.vhd
-    Info (12022): Found design unit 1: DIG_OUT-a File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/DIG_OUT.vhd Line: 26
-    Info (12023): Found entity 1: DIG_OUT File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/DIG_OUT.vhd Line: 16
+    Info (12022): Found design unit 1: DIG_OUT-a File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_OUT.vhd Line: 26
+    Info (12023): Found entity 1: DIG_OUT File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_OUT.vhd Line: 16
 Info (12021): Found 2 design units, including 1 entities, in source file dig_in.vhd
-    Info (12022): Found design unit 1: DIG_IN-a File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/DIG_IN.vhd Line: 20
-    Info (12023): Found entity 1: DIG_IN File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/DIG_IN.vhd Line: 11
+    Info (12022): Found design unit 1: DIG_IN-a File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 20
+    Info (12023): Found entity 1: DIG_IN File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-a File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/clk_div.vhd Line: 26
-    Info (12023): Found entity 1: clk_div File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/clk_div.vhd Line: 11
+    Info (12022): Found design unit 1: clk_div-a File: C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd Line: 26
+    Info (12023): Found entity 1: clk_div File: C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
-    Info (12022): Found design unit 1: TIMER-a File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/TIMER.vhd Line: 29
-    Info (12023): Found entity 1: TIMER File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/TIMER.vhd Line: 17
+    Info (12022): Found design unit 1: TIMER-a File: C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd Line: 29
+    Info (12023): Found entity 1: TIMER File: C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd Line: 17
 Info (12021): Found 2 design units, including 1 entities, in source file scomp.vhd
-    Info (12022): Found design unit 1: SCOMP-a File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 33
-    Info (12023): Found entity 1: SCOMP File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 16
+    Info (12022): Found design unit 1: SCOMP-a File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 33
+    Info (12023): Found entity 1: SCOMP File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file scomp_system.bdf
     Info (12023): Found entity 1: SCOMP_System
 Info (12021): Found 1 design units, including 1 entities, in source file hex_disp_6.bdf
     Info (12023): Found entity 1: HEX_DISP_6
 Info (12021): Found 2 design units, including 1 entities, in source file pll_main.vhd
-    Info (12022): Found design unit 1: PLL_main-rtl File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main.vhd Line: 20
-    Info (12023): Found entity 1: PLL_main File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main.vhd Line: 11
+    Info (12022): Found design unit 1: PLL_main-rtl File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd Line: 20
+    Info (12023): Found entity 1: PLL_main File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll_main/pll_main_0002.v
-    Info (12023): Found entity 1: PLL_main_0002 File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main/PLL_main_0002.v Line: 2
+    Info (12023): Found entity 1: PLL_main_0002 File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 2
 Info (12127): Elaborating entity "SCOMP_System" for the top level hierarchy
 Info (12128): Elaborating entity "HEX_DISP_6" for hierarchy "HEX_DISP_6:inst9"
 Info (12128): Elaborating entity "HEX_DISP" for hierarchy "HEX_DISP_6:inst9|HEX_DISP:inst1"
 Info (12128): Elaborating entity "PLL_main" for hierarchy "PLL_main:inst1"
-Info (12128): Elaborating entity "PLL_main_0002" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main.vhd Line: 32
-Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main/PLL_main_0002.v Line: 85
+Info (12128): Elaborating entity "PLL_main_0002" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst" File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd Line: 32
+Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main/PLL_main_0002.v Line: 85
-Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/PLL_main/PLL_main_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
+Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -889,9 +888,9 @@ Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_i
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "SCOMP" for hierarchy "SCOMP:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 63
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 63
-Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 63
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
+Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -943,44 +942,45 @@ Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_compon
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7d24.tdf
-    Info (12023): Found entity 1: altsyncram_7d24 File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/db/altsyncram_7d24.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_7d24 File: C:/GaTech/ECE2031/2031Lab7G3Project/db/altsyncram_7d24.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_7d24" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component|altsyncram_7d24:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 90
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 90
-Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 90
+Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File C:/GaTech/ECE2031/2031Lab7G3Project/IODemo1.mif -- setting all initial values to 0 File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
+Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 90
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 90
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 90
     Info (12134): Parameter "LPM_WIDTH" = "16"
     Info (12134): Parameter "LPM_WIDTHDIST" = "4"
     Info (12134): Parameter "LPM_SHIFTTYPE" = "arithmetic"
     Info (12134): Parameter "LPM_TYPE" = "LPM_CLSHIFT"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
-Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 114
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 114
-Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/SCOMP.vhd Line: 114
+Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 114
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 114
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 114
     Info (12134): Parameter "LPM_WIDTH" = "16"
     Info (12134): Parameter "LPM_TYPE" = "LPM_BUSTRI"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12128): Elaborating entity "TIMER" for hierarchy "TIMER:inst4"
-Warning (10492): VHDL Process Statement warning at TIMER.vhd(48): signal "IO_WRITE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/TIMER.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at TIMER.vhd(48): signal "IO_WRITE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd Line: 48
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
 Info (12128): Elaborating entity "DIG_IN" for hierarchy "DIG_IN:inst7"
 Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst6"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[13]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[12]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[11]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[10]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[9]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[8]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[7]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[6]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[5]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[4]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[3]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
-    Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: C:/GaTech/ECE2031/Lab8/SCOMP_Lab8_Fall25/HEX_DISP.vhd Line: 25
+    Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[13]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[12]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[11]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[10]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[9]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[8]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[7]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[6]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[5]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[4]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[3]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -991,10 +991,10 @@ Info (21057): Implemented 609 device resources after synthesis - the final resou
     Info (21061): Implemented 528 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 5010 megabytes
-    Info: Processing ended: Thu Oct 23 09:04:45 2025
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:02
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4999 megabytes
+    Info: Processing ended: Thu Nov  6 11:42:58 2025
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:40
 
 

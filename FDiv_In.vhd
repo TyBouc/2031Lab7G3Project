@@ -7,8 +7,7 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 USE LPM.LPM_COMPONENTS.ALL;
 
 ENTITY FDiv_In IS
-	PORT
-	(
+	PORT(
 		Numerator      : IN  STD_LOGIC(7 DOWNTO 4);
 		Denominator      : IN  STD_LOGIC(3 DOWNTO 0);
 		Result_Out_H : OUT STD_LOGIC(7 DOWNTO 0); -- Floor
@@ -16,9 +15,7 @@ ENTITY FDiv_In IS
 	);
 END FDiv_In;
 
-
 ARCHITECTURE a OF FDiv_In IS
-	-- IDK what goes here?
 	 SIGNAL Num_full : STD_LOGIC_VECTOR(7 DOWNTO 0);
     SIGNAL Den_full : STD_LOGIC_VECTOR(7 DOWNTO 0);
     SIGNAL Quotient : STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -44,10 +41,7 @@ ARCHITECTURE a OF FDiv_In IS
 		quotient <= Quotient;
 		remainder <= Remainder;
 	)
-	if (Denominator = 0x0000) =>
-		return NULL;
-	end if;
-	Quotient := Numerator / Denominator
-	
-Result_Out_H <= Quotient
-Result_Out_L <= Remainder
+	Result_OutH <= Quotient;
+	Result_OutL <= Remainder;
+
+END rtl;
