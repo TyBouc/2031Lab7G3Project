@@ -12,7 +12,6 @@ entity Multiplier_Peripheral is
 		reset : in std_logic;
 		io_addr : in std_logic_vector(3 downto 0);
 		io_wr : in std_logic;
-		io_rd : in std_logic;
 		io_din : in std_logic_vector(15 downto 0);
 		io_dout : in std_logic_vector(15 downto 0)
 	);
