@@ -1,0 +1,36 @@
+WIDTH=16;
+DEPTH=2048;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+0000: 9000; -- 	IN     Switches
+0001: 9801; -- 	OUT    LEDs
+0002: 1018; -- 	STORE  Pattern
+0003: 0818; -- 	LOAD   Pattern
+0004: 381A; -- 	AND    Bit9         ; bit mask
+0005: 780B; -- 	JNZ    Right        ; bit9 is 1; go right
+0006: 0818; -- 	LOAD   Pattern
+0007: 5001; -- 	SHIFT  1
+0008: 1018; -- 	STORE  Pattern
+0009: 9801; -- 	OUT    LEDs
+000A: 5803; -- 	JUMP   Left
+000B: 0818; -- 	LOAD   Pattern
+000C: 3819; -- 	AND    Bit0         ; bit mask
+000D: 7803; -- 	JNZ    Left         ; bit0 is 1; go left
+000E: 0818; -- 	LOAD   Pattern
+000F: 5011; -- 	SHIFT  -1
+0010: 1018; -- 	STORE  Pattern
+0011: 9801; -- 	OUT    LEDs
+0012: 580B; -- 	JUMP   Right
+0013: 9802; -- 	OUT    Timer
+0014: 9002; -- 	IN     Timer
+0015: 37FB; -- 	ADDI   -5
+0016: 6014; -- 	JNEG   WaitingLoop
+0017: 8800; -- 	RETURN
+0018: 0000; -- Pattern:   DW 0
+0019: 0001; -- Bit0:      DW &B0000000001
+001A: 0200; -- Bit9:      DW &B1000000000
+[001B..07FF] : 0000; -- [empty memory]
+END;

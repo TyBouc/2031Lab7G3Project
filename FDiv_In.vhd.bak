@@ -1,0 +1,18 @@
+LIBRARY IEEE;
+USE  IEEE.STD_LOGIC_1164.all;
+USE  IEEE.STD_LOGIC_ARITH.all;
+USE  IEEE.STD_LOGIC_UNSIGNED.all;
+
+ENTITY FDiv_In IS
+
+	PORT
+	(
+		mult_In      : IN  STD_LOGIC(7 DOWNTO 0);
+		FDiv_In      : IN  STD_LOGIC(7 DOWNTO 0);
+		Mod_In      : IN  STD_LOGIC(7 DOWNTO 0);
+		Sin_In      : IN  STD_LOGIC(7 DOWNTO 0);
+		Cos_In      : IN  STD_LOGIC(7 DOWNTO 0);
+		Result_Out : OUT STD_LOGIC(7 DOWNTO 0)
+		
+	);
+END FDiv_In;
