@@ -5,29 +5,26 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity unsigned_multiply_with_input_and_output_registers is
-
-	generic
-	(
-		DATA_WIDTH : natural := 8
-	);
-
+entity Multiplier_Peripheral is
 	port 
 	(
-		mul_in		: in ((DATA_WIDTH-1) downto 0);
-		div_in		: in ((DATA_WIDTH-1) downto 0);
-		clk			: in std_logic;
-		clear	   	: in std_logic;
-		result		: out unsigned ((2*DATA_WIDTH-1) downto 0)
+		clk : in std_logic;
+		reset : in std_logic;
+		io_addr : in std_logic_vector(3 downto 0);
+		io_wr : in std_logic;
+		io_rd : in std_logic;
+		io_din : in std_logic_vector(15 downto 0);
+		io_dout : in std_logic_vector(15 downto 0)
 	);
+end Multiplier_Peripheral;
 
-end entity;
-
-architecture rtl of unsigned_multiply_with_input_and_output_registers is
+architecture Behavior of Multiplier_Peripheral is
 
 	-- Declare I/O registers
-	signal a_reg, b_reg : ((DATA_WIDTH-1) downto 0);
-	signal out_reg	  : unsigned ((2*DATA_WIDTH-1) downto 0);
+	signal a_reg, b_reg : (7 downto 0) := (others => '0');
+	signal result : std_logic_vector(15 downto 0) := (others => '0');
+	signal ctrl : std_logic := '0';
+	signal done : std_logic := '0';
 
 begin
 
