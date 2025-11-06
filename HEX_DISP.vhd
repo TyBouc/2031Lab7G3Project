@@ -19,7 +19,6 @@ ARCHITECTURE a OF HEX_DISP IS
   SIGNAL hex_d       : STD_LOGIC_VECTOR(3 DOWNTO 0);
 
 BEGIN
-Q
   PROCESS (resetn, cs)
   BEGIN
     IF (resetn = '0') THEN
