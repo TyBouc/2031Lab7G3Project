@@ -1,0 +1,24 @@
+ENTITY Math_Peripheral IS
+    PORT (
+        IO_ADDR  : IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
+        IO_DATA  : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+        IO_READ  : IN  STD_LOGIC;
+        IO_WRITE : IN  STD_LOGIC;
+        CLK      : IN  STD_LOGIC
+    );
+END Math_Peripheral;
+
+ARCHITECTURE rtl OF Math_Peripheral IS
+    SIGNAL Mult_x1, Mult_x2   : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL Div_num, Div_den   : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL Mod_num, Mod_den   : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL Sin_x, Cos_x       : STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+    SIGNAL Mult_result        : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    SIGNAL Div_result, Mod_result : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    SIGNAL Sin_result, Cos_result : STD_LOGIC_VECTOR(15 DOWNTO 0);
+
+    SIGNAL Result_L, Result_H : STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SIGNAL Data_out           : STD_LOGIC_VECTOR(15 DOWNTO 0);
+
+BEGIN

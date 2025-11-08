@@ -1,0 +1,31 @@
+LIBRARY IEEE;
+LIBRARY LPM;
+
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE LPM.LPM_COMPONENTS.ALL;
+
+ENTITY Math_Peripheral IS
+    PORT (
+        CLOCK,
+        RESETN   : IN    STD_LOGIC;
+        IO_ADDR  : IN    STD_LOGIC_VECTOR(10 DOWNTO 0);
+        IO_READ  : IN    STD_LOGIC;
+        IO_WRITE : IN    STD_LOGIC;
+        IO_DATA  : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    );
+END Math_Peripheral;
+ARCHITECTURE a OF Math_Peripheral IS
+
+    -- Internal registers
+    SIGNAL Mult_x1, Mult_x2     : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL Div_num, Div_den     : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL Mod_num, Mod_den     : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL Sin_x, Cos_x         : STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SIGNAL Result_H, Result_L   : STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+    SIGNAL IO_EN : STD_LOGIC;
+    SIGNAL IO_OUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
+
+	 Begin --GoFromHere
