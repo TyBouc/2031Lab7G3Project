@@ -17,7 +17,7 @@ entity Multiplier_Peripheral is
 	);
 end Multiplier_Peripheral;
 
-architecture Behavior of Multiplier_Peripheral is
+architecture Behavior of Multiplier_Peripheral is	
 
 	-- Declare I/O registers
 	signal a_reg, b_reg : (7 downto 0) := (others => '0');
@@ -49,4 +49,4 @@ begin
 	-- Output multiplication result
 	result <= out_reg;
 
-end rtl;
+end Behavior;
