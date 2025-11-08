@@ -1,5 +1,5 @@
 Analysis & Synthesis report for L7G3FinalProject
-Sat Nov  8 15:15:28 2025
+Sat Nov  8 15:22:24 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -10,17 +10,7 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis DSP Block Usage Summary
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -44,27 +34,22 @@ on the Quartus Prime software download page.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Nov  8 15:15:28 2025           ;
-; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
-; Revision Name                   ; L7G3FinalProject                                ;
-; Top-level Entity Name           ; Math_Peripheral                                 ;
-; Family                          ; Cyclone V                                       ;
-; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 16                                              ;
-; Total pins                      ; 31                                              ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0                                               ;
-; Total DSP Blocks                ; 1                                               ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0                                               ;
-; Total DLLs                      ; 0                                               ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Sat Nov  8 15:22:24 2025               ;
+; Quartus Prime Version       ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name               ; L7G3FinalProject                                ;
+; Top-level Entity Name       ; SCOMP_System                                    ;
+; Family                      ; Cyclone V                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                       ;
+; Total registers             ; N/A until Partition Merge                       ;
+; Total pins                  ; N/A until Partition Merge                       ;
+; Total virtual pins          ; N/A until Partition Merge                       ;
+; Total block memory bits     ; N/A until Partition Merge                       ;
+; Total PLLs                  ; N/A until Partition Merge                       ;
+; Total DLLs                  ; N/A until Partition Merge                       ;
++-----------------------------+-------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -73,7 +58,7 @@ on the Quartus Prime software download page.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; Math_Peripheral    ; L7G3FinalProject   ;
+; Top-level entity name                                                           ; SCOMP_System       ; L7G3FinalProject   ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -163,196 +148,11 @@ on the Quartus Prime software download page.
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; Math_Peripheral.vhd              ; yes             ; User VHDL File               ; C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd                       ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
-; aglobal241.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc      ;         ;
-; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_42m.tdf                     ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/GaTech/ECE2031/2031Lab7G3Project/db/sign_div_unsign_7kh.tdf                ;         ;
-; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/GaTech/ECE2031/2031Lab7G3Project/db/alt_u_div_kse.tdf                      ;         ;
-; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_1am.tdf                     ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 48    ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 79    ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 15    ;
-;     -- 5 input functions                    ; 17    ;
-;     -- 4 input functions                    ; 16    ;
-;     -- <=3 input functions                  ; 31    ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 16    ;
-;                                             ;       ;
-; I/O pins                                    ; 31    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 1     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; x2[3] ;
-; Maximum fan-out                             ; 20    ;
-; Total fan-out                               ; 451   ;
-; Average fan-out                             ; 2.59  ;
-+---------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                     ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                              ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Math_Peripheral                       ; 79 (35)             ; 16 (16)                   ; 0                 ; 1          ; 31   ; 0            ; |Math_Peripheral                                                                                                 ; Math_Peripheral     ; work         ;
-;    |lpm_divide:Div0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_1am:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-;    |lpm_divide:Mod0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_42m:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Math_Peripheral|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------+
-; Analysis & Synthesis DSP Block Usage Summary  ;
-+---------------------------------+-------------+
-; Statistic                       ; Number Used ;
-+---------------------------------+-------------+
-; Independent 9x9                 ; 1           ;
-; Total number of DSP blocks      ; 1           ;
-;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 1           ;
-+---------------------------------+-------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 16    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 16    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |Math_Peripheral|Result[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_1am ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 16                          ;
-;     ENA CLR           ; 16                          ;
-; arriav_io_obuf        ; 16                          ;
-; arriav_lcell_comb     ; 79                          ;
-;     arith             ; 12                          ;
-;         0 data inputs ; 4                           ;
-;         2 data inputs ; 2                           ;
-;         5 data inputs ; 6                           ;
-;     normal            ; 49                          ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 10                          ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 15                          ;
-;     shared            ; 18                          ;
-;         0 data inputs ; 6                           ;
-;         2 data inputs ; 6                           ;
-;         4 data inputs ; 6                           ;
-; arriav_mac            ; 1                           ;
-; boundary_port         ; 31                          ;
-;                       ;                             ;
-; Max LUT depth         ; 9.50                        ;
-; Average LUT depth     ; 4.90                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -361,50 +161,124 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Nov  8 15:15:16 2025
+    Info: Processing started: Sat Nov  8 15:22:13 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off L7G3FinalProject -c L7G3FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file math_peripheral.vhd
     Info (12022): Found design unit 1: Math_Peripheral-rtl File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 16
     Info (12023): Found entity 1: Math_Peripheral File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 5
-Info (12127): Elaborating entity "Math_Peripheral" for the top level hierarchy
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 57
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 46
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 57
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 57
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
-    Info (12023): Found entity 1: lpm_divide_42m File: C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_42m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/GaTech/ECE2031/2031Lab7G3Project/db/sign_div_unsign_7kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/GaTech/ECE2031/2031Lab7G3Project/db/alt_u_div_kse.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 46
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 46
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1am.tdf
-    Info (12023): Found entity 1: lpm_divide_1am File: C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_1am.tdf Line: 25
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 0 output pins
-    Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 87 logic cells
-    Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4969 megabytes
-    Info: Processing ended: Sat Nov  8 15:15:28 2025
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:27
+Info (12021): Found 1 design units, including 1 entities, in source file scomp_system.bdf
+    Info (12023): Found entity 1: SCOMP_System
+Info (12127): Elaborating entity "SCOMP_System" for the top level hierarchy
+Warning (12125): Using design file hex_disp_6.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: HEX_DISP_6
+Info (12128): Elaborating entity "HEX_DISP_6" for hierarchy "HEX_DISP_6:inst9"
+Warning (12125): Using design file hex_disp.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: HEX_DISP-a File: C:/GaTech/ECE2031/2031Lab7G3Project/hex_disp.vhd Line: 17
+    Info (12023): Found entity 1: HEX_DISP File: C:/GaTech/ECE2031/2031Lab7G3Project/hex_disp.vhd Line: 9
+Info (12128): Elaborating entity "HEX_DISP" for hierarchy "HEX_DISP_6:inst9|HEX_DISP:inst1"
+Warning (12125): Using design file pll_main.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: PLL_main-rtl File: C:/GaTech/ECE2031/2031Lab7G3Project/pll_main.vhd Line: 20
+    Info (12023): Found entity 1: PLL_main File: C:/GaTech/ECE2031/2031Lab7G3Project/pll_main.vhd Line: 11
+Info (12128): Elaborating entity "PLL_main" for hierarchy "PLL_main:inst1"
+Warning (12125): Using design file scomp.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: SCOMP-a File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 33
+    Info (12023): Found entity 1: SCOMP File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 16
+Info (12128): Elaborating entity "SCOMP" for hierarchy "SCOMP:inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 63
+Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 63
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
+    Info (12134): Parameter "intended_device_family" = "CYCLONE V"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+    Info (12134): Parameter "init_file" = "ProjectTest1.0.mif"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "2048"
+    Info (12134): Parameter "numwords_b" = "0"
+    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "16"
+    Info (12134): Parameter "width_b" = "1"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "11"
+    Info (12134): Parameter "widthad_b" = "1"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u134.tdf
+    Info (12023): Found entity 1: altsyncram_u134 File: C:/GaTech/ECE2031/2031Lab7G3Project/db/altsyncram_u134.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_u134" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component|altsyncram_u134:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 90
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 90
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 90
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+    Info (12134): Parameter "LPM_WIDTHDIST" = "4"
+    Info (12134): Parameter "LPM_SHIFTTYPE" = "arithmetic"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_CLSHIFT"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 114
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 114
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/scomp.vhd Line: 114
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_BUSTRI"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Warning (12125): Using design file timer.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: TIMER-a File: C:/GaTech/ECE2031/2031Lab7G3Project/timer.vhd Line: 29
+    Info (12023): Found entity 1: TIMER File: C:/GaTech/ECE2031/2031Lab7G3Project/timer.vhd Line: 17
+Info (12128): Elaborating entity "TIMER" for hierarchy "TIMER:inst4"
+Warning (10492): VHDL Process Statement warning at timer.vhd(48): signal "IO_WRITE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/GaTech/ECE2031/2031Lab7G3Project/timer.vhd Line: 48
+Warning (12125): Using design file clk_div.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: clk_div-a File: C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd Line: 26
+    Info (12023): Found entity 1: clk_div File: C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd Line: 11
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
+Warning (12125): Using design file dig_in.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: DIG_IN-a File: C:/GaTech/ECE2031/2031Lab7G3Project/dig_in.vhd Line: 20
+    Info (12023): Found entity 1: DIG_IN File: C:/GaTech/ECE2031/2031Lab7G3Project/dig_in.vhd Line: 11
+Info (12128): Elaborating entity "DIG_IN" for hierarchy "DIG_IN:inst7"
+Info (12128): Elaborating entity "Math_Peripheral" for hierarchy "Math_Peripheral:inst10"
+Warning (12125): Using design file dig_out.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: DIG_OUT-a File: C:/GaTech/ECE2031/2031Lab7G3Project/dig_out.vhd Line: 26
+    Info (12023): Found entity 1: DIG_OUT File: C:/GaTech/ECE2031/2031Lab7G3Project/dig_out.vhd Line: 16
+Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst6"
+Error (12006): Node instance "pll_main_inst" instantiates undefined entity "PLL_main_0002". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/GaTech/ECE2031/2031Lab7G3Project/pll_main.vhd Line: 32
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 10 warnings
+    Error: Peak virtual memory: 4879 megabytes
+    Error: Processing ended: Sat Nov  8 15:22:24 2025
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:26
 
 
