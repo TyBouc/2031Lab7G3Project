@@ -4,6 +4,7 @@ LIBRARY LPM;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_ARITH.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 USE LPM.LPM_COMPONENTS.ALL;
 
 ENTITY Math_Peripheral IS
@@ -36,19 +37,37 @@ ARCHITECTURE a OF Math_Peripheral IS
             x2 <= (OTHERS => '0');
             Result <= (OTHERS => '0');
         ELSIF RISING_EDGE(CLOCK) THEN
-            IF IO_EN = '1' THEN
-                if (ioaddr = 0x90)
-                    do x1 * x2 -> Result
-                else if (ioaddr = 0x91) and x2 != 0
-                    do x1 / x2 -> Result
-                else if (0x93)
-                    x2 & x1 => y
-                    siny = result
-                
-                -- Handle IO_WRITE and IO_READ operations here
-                -- (Implementation of read/write logic goes here)
-            END IF;
+         IF (IO_WRITE = '1') THEN
+            CASE IO_ADDR IS
+                WHEN "00100100000" =>  -- 0x90 MULT
+                    x1 <= IO_DATA(7 DOWNTO 4);
+                    x2 <= IO_DATA(3 DOWNTO 0);
+                    Result <= ("0000" & x1) * ("0000" & x2);
+
+                WHEN "00100100001" =>  -- 0x91 DIV
+                    x1 <= IO_DATA(7 DOWNTO 4);
+                    x2 <= IO_DATA(3 DOWNTO 0);
+                    IF x2 /= "0000" THEN
+                        Result <= RE("0000" & x1) / ("0000" & x2);
+                    ELSE
+                        Result <= (OTHERS => '0');
+                    END IF;
+
+                WHEN "00100100010" =>  -- 0x92 MOD
+                    x1 <= IO_DATA(7 DOWNTO 4);
+                    x2 <= IO_DATA(3 DOWNTO 0);
+                    IF x2 /= "0000" THEN
+                        Result <= ("0000" & x1) MOD ("0000" & x2);
+                    ELSE
+                        Result <= (OTHERS => '0');
+                    END IF;
+
+                WHEN OTHERS =>
+                    NULL;
+            END CASE;
         END IF;
-    END PROCESS;
+    END IF;
+END PROCESS;
 
     IO_DATA <= IO_OUT WHEN IO_READ = '1' ELSE (OTHERS => 'Z');
+End a;

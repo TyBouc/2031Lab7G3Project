@@ -1,5 +1,5 @@
 Analysis & Synthesis report for L7G3FinalProject
-Sat Nov  8 13:30:11 2025
+Sat Nov  8 14:04:48 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sat Nov  8 13:30:11 2025               ;
+; Analysis & Synthesis Status ; Failed - Sat Nov  8 14:04:48 2025               ;
 ; Quartus Prime Version       ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name               ; L7G3FinalProject                                ;
 ; Top-level Entity Name       ; L7G3FinalProject                                ;
@@ -161,18 +161,18 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Nov  8 13:29:20 2025
+    Info: Processing started: Sat Nov  8 14:04:33 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off L7G3FinalProject -c L7G3FinalProject
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Error (10500): VHDL syntax error at Math_Peripheral.vhd(55) near text "IF";  expecting "end", or "(", or an identifier ("if" is a reserved keyword), or a concurrent statement File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 55
-Error (10500): VHDL syntax error at Math_Peripheral.vhd(58) near text "ELSE";  expecting "end", or "(", or an identifier ("else" is a reserved keyword), or a concurrent statement File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 58
-Error (10500): VHDL syntax error at Math_Peripheral.vhd(61) near text "IF";  expecting ";", or an identifier ("if" is a reserved keyword), or "architecture" File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 61
-Info (12021): Found 0 design units, including 0 entities, in source file math_peripheral.vhd
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
-    Error: Peak virtual memory: 4882 megabytes
-    Error: Processing ended: Sat Nov  8 13:30:11 2025
-    Error: Elapsed time: 00:00:51
-    Error: Total CPU time (on all processors): 00:00:39
+Info (12021): Found 2 design units, including 1 entities, in source file math_peripheral.vhd
+    Info (12022): Found design unit 1: Math_Peripheral-a File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 20
+    Info (12023): Found entity 1: Math_Peripheral File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 10
+Error (10327): VHDL error at Math_Peripheral.vhd(51): can't determine definition of operator ""/"" -- found 0 possible definitions File: C:/GaTech/ECE2031/2031Lab7G3Project/Math_Peripheral.vhd Line: 51
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4870 megabytes
+    Error: Processing ended: Sat Nov  8 14:04:48 2025
+    Error: Elapsed time: 00:00:15
+    Error: Total CPU time (on all processors): 00:00:37
 
 
