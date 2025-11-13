@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Thu Nov  6 11:42:58 2025
+Analysis & Synthesis Status : Successful - Thu Nov 13 10:20:07 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : SCOMP
 Top-level Entity Name : SCOMP_System
@@ -8,7 +8,7 @@ Total registers : 258
 Total pins : 64
 Total virtual pins : 0
 Total block memory bits : 32,768
-Total DSP Blocks : 0
+Total DSP Blocks : 1
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
