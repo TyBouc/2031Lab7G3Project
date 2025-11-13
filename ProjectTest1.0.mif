@@ -5,6 +5,7 @@ ADDRESS_RADIX=HEX;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
+<<<<<<< Updated upstream
 0000: 1805; -- 	LOADI 5
 0001: 5008; --     SHIFT 8
 0002: 400A; --     OR 10
@@ -18,3 +19,17 @@ CONTENT BEGIN
 [000A..07FF] : 0000; -- [empty memory]
 END;
 
+=======
+0000: 1C05; -- LOADI &B0000010000000101
+0001: 1008; -- Store Temp
+0002: 9890; -- OUT Mult
+0003: 9096; -- IN Result
+0004: 1009; -- STORE Ans
+0005: 9804; -- OUT HEX0
+0006: 1804; -- LOADI 4
+0007: 9805; -- OUT HEX1
+0008: 0000; -- Temp: DW 0
+0009: 0000; -- Ans: DW 0
+[000A..07FF] : 0000; -- [empty memory]
+END;
+>>>>>>> Stashed changes
