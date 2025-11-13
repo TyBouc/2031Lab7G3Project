@@ -2,8 +2,6 @@
 
 ORG 0
 	LOADI &B0000010000000101
-    SHIFT 8
-    OR 10
     Store Temp
     OUT Mult
     IN Result

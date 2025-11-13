@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Thu Nov 13 10:20:07 2025
+Thu Nov 13 10:45:25 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,7 +58,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 13 10:20:07 2025           ;
+; Analysis & Synthesis Status     ; Successful - Thu Nov 13 10:45:25 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; SCOMP                                           ;
 ; Top-level Entity Name           ; SCOMP_System                                    ;
@@ -182,9 +182,7 @@ on the Quartus Prime software download page.
 ;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-;     Processors 7-10        ;   0.0%      ;
+;     Processors 5-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -214,7 +212,7 @@ on the Quartus Prime software download page.
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altram.inc            ;          ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc          ;          ;
 ; db/altsyncram_u134.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/2031Lab7G3Project/db/altsyncram_u134.tdf                      ;          ;
-; ProjectTest1.0.mif               ; yes             ; Auto-Found Memory Initialization File  ; C:/GaTech/ECE2031/2031Lab7G3Project/ProjectTest1.0.mif                          ;          ;
+; projecttest1.0.mif               ; yes             ; Auto-Found Memory Initialization File  ; C:/GaTech/ECE2031/2031Lab7G3Project/projecttest1.0.mif                          ;          ;
 ; lpm_clshift.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_clshift.tdf       ;          ;
 ; lpm_bustri.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_bustri.tdf        ;          ;
 ; math_peripheral.vhd              ; yes             ; Auto-Found VHDL File                   ; C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd                         ;          ;
@@ -233,14 +231,14 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 321                                                                               ;
+; Estimate of Logic utilization (ALMs needed) ; 322                                                                               ;
 ;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 452                                                                               ;
+; Combinational ALUT usage for logic          ; 451                                                                               ;
 ;     -- 7 input functions                    ; 4                                                                                 ;
-;     -- 6 input functions                    ; 72                                                                                ;
-;     -- 5 input functions                    ; 165                                                                               ;
-;     -- 4 input functions                    ; 82                                                                                ;
-;     -- <=3 input functions                  ; 129                                                                               ;
+;     -- 6 input functions                    ; 75                                                                                ;
+;     -- 5 input functions                    ; 164                                                                               ;
+;     -- 4 input functions                    ; 80                                                                                ;
+;     -- <=3 input functions                  ; 128                                                                               ;
 ;                                             ;                                                                                   ;
 ; Dedicated logic registers                   ; 258                                                                               ;
 ;                                             ;                                                                                   ;
@@ -255,8 +253,8 @@ on the Quartus Prime software download page.
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
 ; Maximum fan-out                             ; 271                                                                               ;
-; Total fan-out                               ; 3239                                                                              ;
-; Average fan-out                             ; 3.78                                                                              ;
+; Total fan-out                               ; 3242                                                                              ;
+; Average fan-out                             ; 3.79                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -265,7 +263,7 @@ on the Quartus Prime software download page.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |SCOMP_System                             ; 452 (0)             ; 258 (0)                   ; 32768             ; 1          ; 64   ; 0            ; |SCOMP_System                                                                                                                        ; SCOMP_System        ; work         ;
+; |SCOMP_System                             ; 451 (0)             ; 258 (0)                   ; 32768             ; 1          ; 64   ; 0            ; |SCOMP_System                                                                                                                        ; SCOMP_System        ; work         ;
 ;    |DIG_IN:inst7|                         ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                           ; DIG_IN              ; work         ;
 ;    |DIG_OUT:inst6|                        ; 1 (1)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_OUT:inst6                                                                                                          ; DIG_OUT             ; work         ;
 ;    |HEX_DISP_6:inst9|                     ; 46 (4)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                       ; HEX_DISP_6          ; work         ;
@@ -275,7 +273,7 @@ on the Quartus Prime software download page.
 ;       |HEX_DISP:inst4|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst4                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst5|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst5                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst6|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst6                                                                                        ; HEX_DISP            ; work         ;
-;    |Math_Peripheral:inst10|               ; 71 (27)             ; 8 (8)                     ; 0                 ; 1          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10                                                                                                 ; Math_Peripheral     ; work         ;
+;    |Math_Peripheral:inst10|               ; 70 (26)             ; 8 (8)                     ; 0                 ; 1          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10                                                                                                 ; Math_Peripheral     ; work         ;
 ;       |lpm_divide:Div0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_1am:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
 ;             |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
@@ -834,7 +832,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 110                         ;
 ;     SCLR              ; 19                          ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 458                         ;
+; arriav_lcell_comb     ; 457                         ;
 ;     arith             ; 66                          ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 37                          ;
@@ -842,13 +840,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         5 data inputs ; 22                          ;
 ;     extend            ; 4                           ;
 ;         7 data inputs ; 4                           ;
-;     normal            ; 370                         ;
+;     normal            ; 369                         ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 24                          ;
+;         2 data inputs ; 23                          ;
 ;         3 data inputs ; 48                          ;
-;         4 data inputs ; 76                          ;
-;         5 data inputs ; 143                         ;
-;         6 data inputs ; 72                          ;
+;         4 data inputs ; 74                          ;
+;         5 data inputs ; 142                         ;
+;         6 data inputs ; 75                          ;
 ;     shared            ; 18                          ;
 ;         0 data inputs ; 6                           ;
 ;         2 data inputs ; 6                           ;
@@ -859,7 +857,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.50                       ;
-; Average LUT depth     ; 4.05                        ;
+; Average LUT depth     ; 4.04                        ;
 +-----------------------+-----------------------------+
 
 
@@ -868,7 +866,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -878,7 +876,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Nov 13 10:19:39 2025
+    Info: Processing started: Thu Nov 13 10:45:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file hex_disp.vhd
@@ -1106,17 +1104,17 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]"
     Warning (15610): No output dependent on input pin "SW[9]"
-Info (21057): Implemented 701 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 700 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 619 logic cells
+    Info (21061): Implemented 618 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4999 megabytes
-    Info: Processing ended: Thu Nov 13 10:20:08 2025
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:01:02
+    Info: Peak virtual memory: 5007 megabytes
+    Info: Processing ended: Thu Nov 13 10:45:25 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 
