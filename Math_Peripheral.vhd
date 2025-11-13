@@ -31,44 +31,42 @@ BEGIN
             IF IO_WRITE = '1' THEN
                 CASE IO_ADDR IS
 
-							WHEN "00010010000" =>  -- 0x90 MULT
-								 x1 <= IO_DATA(7 DOWNTO 4);
-								 x2 <= IO_DATA(3 DOWNTO 0);
-								 Result <= STD_LOGIC_VECTOR(
-									  RESIZE(UNSIGNED(IO_DATA(7 DOWNTO 4)) * UNSIGNED(IO_DATA(3 DOWNTO 0)), 8)
-								 );
+                    WHEN "00010010000" =>  -- 0x90 MULT
+                            x1 <= IO_DATA(7 DOWNTO 4);
+                            x2 <= IO_DATA(3 DOWNTO 0);
+                            Result <= STD_LOGIC_VECTOR(
+                                RESIZE(UNSIGNED(IO_DATA(7 DOWNTO 4)) * UNSIGNED(IO_DATA(3 DOWNTO 0)), 8)
+                            );
 
-				WHEN "00010010001" =>  -- 0x91 DIV
-					 x1 <= IO_DATA(7 DOWNTO 4);
-					 x2 <= IO_DATA(3 DOWNTO 0);
-					 IF IO_DATA(3 DOWNTO 0) /= "0000" THEN
-						  Result <= STD_LOGIC_VECTOR(
-								RESIZE(UNSIGNED(IO_DATA(7 DOWNTO 4)) / UNSIGNED(IO_DATA(3 DOWNTO 0)), 8)
-						  );
-					 ELSE
-						  Result <= (OTHERS => '0');
-					 END IF;
+                    WHEN "00010010001" =>  -- 0x91 DIV
+                        x1 <= IO_DATA(7 DOWNTO 4);
+                        x2 <= IO_DATA(3 DOWNTO 0);
+                        IF IO_DATA(3 DOWNTO 0) /= "0000" THEN
+                            Result <= STD_LOGIC_VECTOR(
+                                    RESIZE(UNSIGNED(IO_DATA(7 DOWNTO 4)) / UNSIGNED(IO_DATA(3 DOWNTO 0)), 8)
+                            );
+                        ELSE
+                            Result <= (OTHERS => '0');
+                        END IF;
 
-				WHEN "00010010010" =>  -- 0x92 MOD
-					 x1 <= IO_DATA(7 DOWNTO 4);
-					 x2 <= IO_DATA(3 DOWNTO 0);
-					 IF IO_DATA(3 DOWNTO 0) /= "0000" THEN
-						  Result <= STD_LOGIC_VECTOR(
-								RESIZE(UNSIGNED(IO_DATA(7 DOWNTO 4)) MOD UNSIGNED(IO_DATA(3 DOWNTO 0)), 8)
-						  );
-					 ELSE
-						  Result <= (OTHERS => '0');
-					 END IF;
+                    WHEN "00010010010" =>  -- 0x92 MOD
+                        x1 <= IO_DATA(7 DOWNTO 4);
+                        x2 <= IO_DATA(3 DOWNTO 0);
+                        IF IO_DATA(3 DOWNTO 0) /= "0000" THEN
+                            Result <= STD_LOGIC_VECTOR(
+                                    RESIZE(UNSIGNED(IO_DATA(7 DOWNTO 4)) MOD UNSIGNED(IO_DATA(3 DOWNTO 0)), 8)
+                            );
+                        ELSE
+                            Result <= (OTHERS => '0');
+                        END IF;
 
+                    WHEN OTHERS =>
+                        NULL;
 
-
-										  WHEN OTHERS =>
-												NULL;
-
-						 END CASE;
-					END IF;
-			  END IF;
-		 END PROCESS;
+                END CASE;
+            END IF;
+        END IF;
+    END PROCESS;
 
     -- Read process
     PROCESS (IO_ADDR, IO_READ, Result)
