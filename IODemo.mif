@@ -5,12 +5,31 @@ ADDRESS_RADIX=HEX;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-0000: 1F06; -- LOADI -250      ; Load 4 (8-bit value)
-0001: 9890; -- OUT Ain      ; Write to A register (144)
-0002: 1878; -- LOADI 120     ; Load 2 (8-bit value)  
-0003: 9891; -- OUT Bin      ; Write to B register (145)
-0004: 9897; -- OUT SMod     ; Trigger multiplication (146)
-0005: 909F; -- IN Result    ; Read result (159)
-0006: 9804; -- OUT Hex0     ; Display on Hex0
-[0007..07FF] : 0000; -- [empty memory]
+0000: 1878; -- LOADI 120
+0001: 9890; -- OUT Ain
+0002: 1FCA; -- LOADI -54
+0003: 9891; -- OUT Bin
+0004: 9897; -- OUT SMod
+0005: 909F; -- IN Result
+0006: 9804; -- Out Hex0
+0007: 8015; -- Call Delay
+0008: 1864; -- LOADI 100
+0009: 9890; -- OUT Ain
+000A: 9899; -- OUT SqRoot
+000B: 909F; -- IN Result
+000C: 9804; -- Out Hex0
+000D: 8015; -- Call Delay
+000E: 18AA; -- 	LOADI &HAA
+000F: 9804; -- 	OUT Hex0
+0010: 8015; -- 	Call Delay
+0011: 18BB; -- 	LOADI &HBB
+0012: 9804; -- 	OUT Hex0
+0013: 8015; -- 	Call Delay
+0014: 580E; -- 	JUMP Finish
+0015: 9802; -- 	OUT    Timer
+0016: 9002; -- 	IN     Timer
+0017: 37E2; -- 	ADDI   -30
+0018: 6016; -- 	JNEG   WaitingLoop
+0019: 8800; -- 	RETURN
+[001A..07FF] : 0000; -- [empty memory]
 END;

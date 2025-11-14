@@ -26,6 +26,18 @@ ARCHITECTURE rtl OF Math_Peripheral IS
 BEGIN
 
     PROCESS (CLOCK, RESETN)
+		-- For Sqaure Root ----------------------------------------------------------------------------
+		VARIABLE num : UNSIGNED(15 DOWNTO 0); 
+		VARIABLE res : UNSIGNED(7 DOWNTO 0); 
+		VARIABLE bit0 : UNSIGNED(7 DOWNTO 0); 
+		-----------------------------------------------------------------------------------------------
+		
+		-- For Exponentiation -------------------------------------------------------------------------
+		VARIABLE base1 : UNSIGNED(15 DOWNTO 0);
+		VARIABLE exp   : UNSIGNED(7 DOWNTO 0);
+		VARIABLE res1  : UNSIGNED(15 DOWNTO 0);
+		-----------------------------------------------------------------------------------------------
+		
     BEGIN
         IF RESETN = '0' THEN
             a      <= (OTHERS => '0');
@@ -86,15 +98,47 @@ BEGIN
 								ELSE
 									Result <= (OTHERS => '0');
 								END IF;
+							
+							--0x98 2's Complement ABS Value
+								
                         WHEN "00010011000" => -- 0x98: 2's Comp ABS (A)
                             -- Check if 'a' is negative
                             IF SIGNED(a) < 0 THEN
-                                Result <= STD_LOGIC_VECTOR(-SIGNED(a));
+                                Result <= STD_LOGIC_VECTOR(RESIZE(-SIGNED(a),16));
                             ELSE
-                                Result <= STD_LOGIC_VECTOR(SIGNED(a));
+                                Result <= STD_LOGIC_VECTOR(RESIZE(SIGNED(a),16));
                             END IF;
-
-						
+									 
+							-- 0x99 Truncated Square Root
+							 WHEN "00010011001" => --0x99 Sqaure Root (Truncated to Integer)
+							 num := RESIZE(UNSIGNED(a),16);
+							 res := (OTHERS => '0');
+							 bit0 := TO_UNSIGNED(128,8);
+								FOR i IN 7 DOWNTO 0 LOOP
+									IF (res + bit0) * (res + bit0) <= num THEN
+										res := res + bit0;
+									END IF;
+									bit0 := bit0 / 2;
+								END LOOP;
+								Result <= STD_LOGIC_VECTOR(RESIZE(res,16));
+							
+							--0x9A Exponentiation
+							 WHEN "00010011010" =>
+							 base1 := RESIZE(UNSIGNED(a), 16);   -- base = A
+							 exp   := UNSIGNED(b);               -- exponent = B
+							 res1  := TO_UNSIGNED(1, 16);        -- result starts at 1
+							 
+								FOR i IN 7 DOWNTO 0 LOOP
+									IF exp = 0 THEN
+										EXIT;
+									END IF;
+									res1 := RESIZE(res1 * base1, res1'length);
+									exp := exp - 1	;
+								END LOOP;
+								Result <= STD_LOGIC_VECTOR(RESIZE(res1,16));
+							
+							
+								
                     WHEN OTHERS =>
                         NULL;
                 END CASE;
