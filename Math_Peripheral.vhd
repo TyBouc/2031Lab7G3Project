@@ -57,7 +57,7 @@ BEGIN
                     -- 0x94 : Unsigned division (A / B) -> quotient in low 8 bits
                     WHEN "00010010100" =>  -- 0x94
                         IF UNSIGNED(b) /= 0 THEN
-                            Result <= x"00" & STD_LOGIC_VECTOR(UNSIGNED(a) / UNSIGNED(b));
+                            Result <= STD_LOGIC_VECTOR(RESIZE(UNSIGNED(a) / UNSIGNED(b),16));
                         ELSE
                             Result <= (OTHERS => '0');  -- divide-by-zero -> 0
                         END IF;
@@ -66,10 +66,26 @@ BEGIN
 						  -- 0x95   Signed Division (A/B) -- Quotient in Lower 8 bits
 						  WHEN "00010010101" => -- 0x95
 								IF SIGNED(b) /= 0 THEN
-									Result <=  x"00" & STD_LOGIC_VECTOR(SIGNED(a) / SIGNED(b));
+									Result <=  STD_LOGIC_VECTOR(RESIZE(SIGNED(a) / SIGNED(b),16));
 								ELSE 
 									Result <= (OTHERS => '0');
-								END IF;		 
+								END IF;	
+								
+						  -- 0x96	Unsigned Modulus A MOD B 
+							WHEN "00010010110" => -- 0x96
+								IF UNSIGNED(b) /= 0 THEN
+									Result <= STD_LOGIC_VECTOR(RESIZE(UNSIGNED(a) MOD UNSIGNED(b),16));
+								ELSE
+									Result <= (OTHERS => '0');
+								END IF;
+							
+						  -- 0x97  Signed Modulus A MOD B
+							WHEN "00010010111" => -- 0x97
+								IF SIGNED(b) /= 0 THEN
+									Result <= STD_LOGIC_VECTOR(RESIZE(SIGNED(a) MOD SIGNED(b),16));
+								ELSE
+									Result <= (OTHERS => '0');
+								END IF;
 								
                     WHEN OTHERS =>
                         NULL;
