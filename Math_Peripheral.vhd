@@ -86,7 +86,15 @@ BEGIN
 								ELSE
 									Result <= (OTHERS => '0');
 								END IF;
-								
+                        WHEN "00010011000" => -- 0x98: 2's Comp ABS (A)
+                            -- Check if 'a' is negative
+                            IF SIGNED(a) < 0 THEN
+                                Result <= STD_LOGIC_VECTOR(-SIGNED(a));
+                            ELSE
+                                Result <= STD_LOGIC_VECTOR(SIGNED(a));
+                            END IF;
+
+						
                     WHEN OTHERS =>
                         NULL;
                 END CASE;
