@@ -1,20 +1,17 @@
 WIDTH=16;
 DEPTH=2048;
-
 ADDRESS_RADIX=HEX;
 DATA_RADIX=HEX;
-
 CONTENT BEGIN
-0000: 1805; -- 	LOADI 5
-0001: 5008; --     SHIFT 8
-0002: 400A; --     OR 10
-0003: 1008; --     Store Temp
-0004: 9890; --     OUT Mult
-0005: 9096; --     IN Result
-0006: 1009; --     STORE Ans
-0007: 9801; --     OUT HEX1
+0000: 1805; -- LOADI 5
+0001: 9890; -- OUT XONE
+0002: 180C; -- LOADI 12
+0003: 9891; -- OUT XTWO
+0004: 9892; -- OUT Mult
+0005: 909F; -- IN Result
+0006: 9804; -- OUT Hex0
+0007: 1009; -- STORE Ans
 0008: 0000; -- Temp: DW 0
 0009: 0000; -- Ans: DW 0
 [000A..07FF] : 0000; -- [empty memory]
 END;
-

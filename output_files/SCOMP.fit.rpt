@@ -1,5 +1,5 @@
 Fitter report for SCOMP
-Thu Nov 13 16:21:46 2025
+Fri Nov 14 10:37:13 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -67,7 +67,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Thu Nov 13 16:21:46 2025           ;
+; Fitter Status                   ; Successful - Fri Nov 14 10:37:13 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; SCOMP                                           ;
 ; Top-level Entity Name           ; SCOMP_System                                    ;
@@ -156,11 +156,11 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.07        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.09        ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
@@ -171,6 +171,8 @@ on the Quartus Prime software download page.
 ;     Processor 6            ;   1.0%      ;
 ;     Processor 7            ;   1.0%      ;
 ;     Processor 8            ;   1.0%      ;
+;     Processor 9            ;   0.9%      ;
+;     Processor 10           ;   0.9%      ;
 +----------------------------+-------------+
 
 
@@ -312,7 +314,7 @@ on the Quartus Prime software download page.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/GIthub Repos/2031Lab7G3Project/output_files/SCOMP.pin.
+The pin-out file can be found in C:/GaTech/ECE2031/2031Lab7G3Project/output_files/SCOMP.pin.
 
 
 +---------------------------------------------------------------------------------------------+
@@ -1665,7 +1667,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |altera_pll:altera_pll_i|        ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i                                                     ; altera_pll          ; work         ;
 ;    |SCOMP:inst|                           ; 188.0 (163.3)        ; 195.7 (170.8)                    ; 7.7 (7.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 232 (189)           ; 202 (202)                 ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                             ; SCOMP               ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component                                                                             ; altsyncram          ; work         ;
-;          |altsyncram_lb24:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated                                              ; altsyncram_lb24     ; work         ;
+;          |altsyncram_nh24:auto_generated| ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 32768             ; 4     ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated                                              ; altsyncram_nh24     ; work         ;
 ;       |lpm_clshift:shifter|               ; 24.7 (24.7)          ; 24.8 (24.8)                      ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 43 (43)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                         ; lpm_clshift         ; work         ;
 ;    |TIMER:inst4|                          ; 9.0 (9.0)            ; 9.0 (9.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 18 (18)             ; 20 (20)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER:inst4                                                                                                            ; TIMER               ; work         ;
 ;    |clk_div:inst5|                        ; 14.5 (14.5)          ; 14.8 (14.8)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 25 (25)             ; 29 (29)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |SCOMP_System|clk_div:inst5                                                                                                          ; clk_div             ; work         ;
@@ -1813,13 +1815,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------+---------------------------+---------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------------+--------------------------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
-; Name                                                                                 ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF        ; Location                                                           ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs         ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------------+--------------------------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 2048         ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 32768 ; 2048                        ; 16                          ; --                          ; --                          ; 32768               ; 4           ; 0     ; IODemo.mif ; M10K_X41_Y18_N0, M10K_X41_Y17_N0, M10K_X38_Y18_N0, M10K_X38_Y17_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-+--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+------------+--------------------------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------+--------------------------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
+; Name                                                                                 ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF          ; Location                                                           ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs         ;
++--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------+--------------------------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; Single Clock ; 2048         ; 16           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 32768 ; 2048                        ; 16                          ; --                          ; --                          ; 32768               ; 4           ; 0     ; GameDemo.mif ; M10K_X41_Y18_N0, M10K_X41_Y17_N0, M10K_X38_Y18_N0, M10K_X38_Y17_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
++--------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+--------------+--------------------------------------------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -2195,19 +2197,19 @@ This will disable optimization of problematic paths and expose them for further 
 ; clk_div:inst5|count_10Hz[0]                                                                               ; clk_div:inst5|clock_10Hz_int                                                                              ; 1.330             ;
 ; clk_div:inst5|count_10Hz[5]                                                                               ; clk_div:inst5|clock_10Hz_int                                                                              ; 1.280             ;
 ; clk_div:inst5|count_10Hz[7]                                                                               ; clk_div:inst5|clock_10Hz_int                                                                              ; 1.231             ;
-; SCOMP:inst|PC[7]                                                                                          ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.775             ;
+; SCOMP:inst|PC[7]                                                                                          ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.775             ;
 ; SCOMP:inst|state.decode                                                                                   ; SCOMP:inst|state.ex_jump                                                                                  ; 0.745             ;
-; SCOMP:inst|PC[10]                                                                                         ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a5~porta_address_reg0 ; 0.732             ;
-; SCOMP:inst|PC[9]                                                                                          ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.508             ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a7~porta_datain_reg0  ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.423             ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a7~porta_we_reg       ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.423             ;
-; SCOMP:inst|state.fetch                                                                                    ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.423             ;
-; SCOMP:inst|PC[4]                                                                                          ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.392             ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a4~porta_datain_reg0  ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.392             ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a4~porta_we_reg       ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.392             ;
+; SCOMP:inst|PC[10]                                                                                         ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a5~porta_address_reg0 ; 0.732             ;
+; SCOMP:inst|PC[9]                                                                                          ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.508             ;
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a7~porta_datain_reg0  ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.423             ;
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a7~porta_we_reg       ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.423             ;
+; SCOMP:inst|state.fetch                                                                                    ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a7~porta_address_reg0 ; 0.423             ;
+; SCOMP:inst|PC[4]                                                                                          ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.392             ;
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a4~porta_datain_reg0  ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.392             ;
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a4~porta_we_reg       ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a0~porta_address_reg0 ; 0.392             ;
 ; clk_div:inst5|count_10Hz[12]                                                                              ; clk_div:inst5|clock_10Hz_int                                                                              ; 0.390             ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a10~porta_datain_reg0 ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a5~porta_address_reg0 ; 0.387             ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a10~porta_we_reg      ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_lb24:auto_generated|ram_block1a5~porta_address_reg0 ; 0.387             ;
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a10~porta_datain_reg0 ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a5~porta_address_reg0 ; 0.387             ;
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a10~porta_we_reg      ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_nh24:auto_generated|ram_block1a5~porta_address_reg0 ; 0.387             ;
 ; clk_div:inst5|count_10Hz[11]                                                                              ; clk_div:inst5|clock_10Hz_int                                                                              ; 0.367             ;
 ; clk_div:inst5|count_10Hz[10]                                                                              ; clk_div:inst5|clock_10Hz_int                                                                              ; 0.367             ;
 ; clk_div:inst5|count_10Hz[9]                                                                               ; clk_div:inst5|clock_10Hz_int                                                                              ; 0.367             ;
@@ -2219,7 +2221,7 @@ Note: This table only shows the top 100 path(s) that have the largest delay adde
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (119006): Selected device 5CSXFC6D6F31C6 for design "SCOMP"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -2245,35 +2247,35 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176218): Packed 32 registers into blocks of type DSP block
     Extra Info (176220): Created 32 register duplicates
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:10
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 9% of the available device resources in the region that extends from location X33_Y11 to location X44_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:28
-Info (11888): Total time spent on timing analysis during the Fitter is 1.68 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:21
+Info (11888): Total time spent on timing analysis during the Fitter is 1.63 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
-Info (144001): Generated suppressed messages file C:/GIthub Repos/2031Lab7G3Project/output_files/SCOMP.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (144001): Generated suppressed messages file C:/GaTech/ECE2031/2031Lab7G3Project/output_files/SCOMP.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 6841 megabytes
-    Info: Processing ended: Thu Nov 13 16:21:47 2025
-    Info: Elapsed time: 00:01:22
-    Info: Total CPU time (on all processors): 00:01:57
+    Info: Peak virtual memory: 6945 megabytes
+    Info: Processing ended: Fri Nov 14 10:37:14 2025
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:01:46
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/GIthub Repos/2031Lab7G3Project/output_files/SCOMP.fit.smsg.
+The suppressed messages can be found in C:/GaTech/ECE2031/2031Lab7G3Project/output_files/SCOMP.fit.smsg.
 
 

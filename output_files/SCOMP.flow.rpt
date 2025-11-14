@@ -1,5 +1,5 @@
 Flow report for SCOMP
-Thu Nov 13 16:22:19 2025
+Fri Nov 14 10:37:34 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Nov 13 16:22:19 2025           ;
+; Flow Status                     ; Successful - Fri Nov 14 10:37:34 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; SCOMP                                           ;
 ; Top-level Entity Name           ; SCOMP_System                                    ;
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/13/2025 16:20:09 ;
+; Start date & time ; 11/14/2025 10:36:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SCOMP               ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ on the Quartus Prime software download page.
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name  ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+--------------+-----------------------------------+
 ; ADVANCED_PHYSICAL_OPTIMIZATION      ; Off                                    ; On            ; --           ; --                                ;
-; COMPILER_SIGNATURE_ID               ; 46947098510565.176306880810508         ; --            ; --           ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 52798120910937.176313456420948         ; --            ; --           ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --           ; eda_board_design_signal_integrity ;
@@ -114,12 +114,12 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4990 MB             ; 00:00:31                           ;
-; Fitter               ; 00:01:21     ; 1.1                     ; 6841 MB             ; 00:01:56                           ;
-; Assembler            ; 00:00:15     ; 1.0                     ; 5240 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.5                     ; 5418 MB             ; 00:00:13                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4874 MB             ; 00:00:02                           ;
-; Total                ; 00:02:04     ; --                      ; --                  ; 00:02:51                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4999 MB             ; 00:00:19                           ;
+; Fitter               ; 00:00:56     ; 1.1                     ; 6945 MB             ; 00:01:45                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 5240 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:09     ; 2.0                     ; 5426 MB             ; 00:00:14                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4874 MB             ; 00:00:01                           ;
+; Total                ; 00:01:24     ; --                      ; --                  ; 00:02:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -128,11 +128,11 @@ on the Quartus Prime software download page.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Bryan            ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Bryan            ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Bryan            ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Bryan            ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Bryan            ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Tys_XPS13        ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Tys_XPS13        ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Tys_XPS13        ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Tys_XPS13        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Tys_XPS13        ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
