@@ -900,11 +900,6 @@ on the Quartus Prime software download page.
 	(pt 736 704)
 )
 (connector
-	(text "clock_10Hz" (rect 234 712 290 724)(font "Intel Clear" ))
-	(pt 224 728)
-	(pt 304 728)
-)
-(connector
 	(text "resetn" (rect 234 728 264 740)(font "Intel Clear" ))
 	(pt 224 744)
 	(pt 304 744)
@@ -931,6 +926,11 @@ on the Quartus Prime software download page.
 	(pt 648 728)
 	(bus)
 )
+(connector
+	(text "clk_10MHz" (rect 234 712 287 724)(font "Intel Clear" ))
+	(pt 224 728)
+	(pt 304 728)
+)
 (junction (pt 280 88))
 (title_block
 	(rect 944 912 1312 1032)
@@ -939,7 +939,7 @@ on the Quartus Prime software download page.
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 57 11)(font "Arial" ))(text "Kevin Johnson, Tom Collins" (rect 56 2 290 20)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 48 11)(font "Arial" ))(text "1.00" (rect 56 1 86 16)(font "Arial" (font_size 10)))(border))
 	(section (rect 280 72 368 96)(text "REV" (rect 2 1 24 12)(font "Arial" ))(text "A" (rect 43 1 53 16)(font "Arial" (font_size 10)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 11)(font "Arial" ))(text "Sat Nov  8 15:13:23 2025" (rect 56 3 230 18)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 11)(font "Arial" ))(text "Thu Nov 13 15:34:53 2025" (rect 56 3 237 18)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 240 96 310 120)(text "SHEET" (rect 2 0 37 11)(font "Arial" ))(text "1" (rect 55 5 64 20)(font "Arial" (font_size 10))))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 11)(font "Arial" ))(text "1" (rect 34 4 43 19)(font "Arial" (font_size 10))))
 	(drawing

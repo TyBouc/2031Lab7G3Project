@@ -1,126 +1,24 @@
-  ; IODemo.asm
-  ; Produces a "bouncing" animation on the LEDs.
-  ; The LED pattern is initialized with the switch state.
+ORG 0
 
-  ORG 0
+LOADI -6      ; Load 4 (8-bit value)
+OUT Ain      ; Write to A register (144)
+LOADI 3      ; Load 2 (8-bit value)  
+OUT Bin      ; Write to B register (145)
+OUT SFDiv     ; Trigger multiplication (146)
+IN Result    ; Read result (159)
+OUT Hex0     ; Display on Hex0
 
-      ; Get and store the switch values
-      IN     Switches
-      STORE  InputPattern    ; save the raw switch input
-      OUT    LEDs
-      STORE  Pattern
+; IO address constants
+Switches:  EQU 000
+LEDs:      EQU 001
+Timer:     EQU 002
+Hex0:      EQU 004
+Hex1:      EQU 005
+Ain:       EQU 144    ; 0x90 - 8-bit input A
+Bin:       EQU 145    ; 0x91 - 8-bit input B  
+UMult:     EQU 146    ; 0x92 - Trigger unsigned multiply
+SMult: 	   EQU 147	  ; 0x93 - Signed multiplication
+FDiv:	   EQU 148	  ; 0x94 - Floor Division
+SFDiv: 	   EQU 149    ; 0x95 - Signed Floor Division
 
-  SwitchCheck:
-      LOAD 0
-      STORE SwitchCount ;reset count to 0
-
-      LOAD Pattern 
-      STORE TempSwitches ; copy for manipulation
-
-  Count_Loop:
-      LOAD TempSwitches
-      STORE TempPattern
-
-      JNZ CountOnes ; if TempSwitches is non-zero, check the next bit
-      JUMP Check_Condition ; All bits checked, finished counting
-  CountOnes:
-      LOAD TempSwitches
-      AND One ; Isolate the LSB (lowest switch bit)
-      JNZ CountInc ; If LSB is 1, a switch is raised
-
-
-
-  CountInc:
-      LOAD SwitchCount
-      ADDI 1
-      STORE SwitchCount
-      LOAD SwitchCount
-      SHIFT -1
-      STORE TempSwitches
-      Jump Count_Loop ; coninue to loop
-
-
-  BitLoop:
-      LOAD TempPattern
-      AND Bit0
-      JZERO SkipAdd       ; if bit is 0
-      LOAD Count
-      ADD One
-      STORE Count
-
-
-  SkipAdd:
-      LOAD TempPattern
-      SHIFT -1
-      STORE TempPattern
-      LOAD BitCounter
-      ADD NegOne
-      STORE BitCounter
-      JNZ BitLoop
-
-  Left:
-      ; Slow down the loop so humans can watch it.
-  ;	CALL   Delay
-
-      ; Check if the left place is 1 and if so, switch direction
-      LOAD   Pattern
-      AND    Bit9         ; bit mask
-      JNZ    Right        ; bit9 is 1; go right
-
-      LOAD   Pattern
-      SHIFT  1
-      STORE  Pattern
-      OUT    LEDs
-
-      JUMP   Left
-
-  Right:
-      ; Slow down the loop so humans can watch it.
-  ;	CALL   Delay
-
-      ; Check if the right place is 1 and if so, switch direction
-      LOAD   Pattern
-      AND    Bit0         ; bit mask
-      JNZ    Left         ; bit0 is 1; go left
-
-      LOAD   Pattern
-      SHIFT  -1
-      STORE  Pattern
-      OUT    LEDs
-
-      JUMP   Right
-
-  ; To make things happen on a human timescale, the timer is
-  ; used to delay for half a second.
-  Delay:
-      OUT    Timer
-  WaitingLoop:
-      IN     Timer
-      ADDI   -5
-      JNEG   WaitingLoop
-      RETURN
-
-  ; Variables
-  Pattern:       DW 0
-  InputPattern:  DW 0          
-  TempPattern:   DW 0         
-  Count:         DW 0         
-  BitCounter:    DW 0         
-
-  ; CTs
-  Zero:			DW 0
-  One:			DW 1
-  NegOne:			DW -1
-  Three:         DW 3
-  Ten:           DW 10
-
-  ; Useful values
-  Bit0:          DW &B0000000001
-  Bit9:          DW &B1000000000
-
-  ; IO address constants
-  Switches:  EQU 000
-  LEDs:      EQU 001
-  Timer:     EQU 002
-  Hex0:      EQU 004
-  Hex1:      EQU 005
+Result:    EQU 159    ; 0x9F - Read 16-bit result
