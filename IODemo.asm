@@ -1,9 +1,66 @@
 ORG 0
 
-;Signed Modulus (00F8)
-LOADI 120
+Begin:
+Call Delay
+;Unsigned Mult (72C)
+LOADI 34
 OUT Ain
-LOADI -54
+LOADI 54
+OUT Bin
+OUT UMult
+IN Result
+Out Hex0
+
+Call Delay
+
+;Signed multiplication (FF10)
+LOADI -30
+OUT Ain
+LOADI 8
+OUT Bin
+OUT SMult
+IN Result
+Out Hex0
+
+Call Delay
+
+;Unsigned Divison (2)
+LOADI 100
+OUT Ain
+LOADI 50
+OUT Bin
+OUT FDiv
+IN Result
+Out Hex0
+
+Call Delay
+
+;Signed Division (FFF6) FFF6
+LOADI -100
+OUT Ain
+LOADI 10
+OUT Bin
+OUT SFDiv
+IN Result
+Out Hex0
+
+Call Delay
+
+;Unsigned Modulus (0x26)
+LOADI 200
+OUT Ain
+LOADI 54
+OUT Bin
+OUT UMod
+IN Result
+Out Hex0
+
+Call Delay
+
+;Signed Modulus (FFF1)
+LOADI 127
+OUT Ain
+LOADI -4
 OUT Bin
 OUT SMod
 IN Result
@@ -11,9 +68,17 @@ Out Hex0
 
 Call Delay
 
+;ABS (0x0022) 
+LOADI -34 
+OUT Ain
+OUT ABS
+IN Result
+Out Hex0
 
-;Sqaure Root (0x000A) 
-LOADI 100
+Call Delay
+
+;Sqaure Root (0x000F)
+LOADI 240
 OUT Ain
 OUT SqRoot
 IN Result
@@ -21,15 +86,20 @@ Out Hex0
 
 Call Delay
 
-Finish:
-	LOADI &HAA
-	OUT Hex0
-	Call Delay
-	LOADI &HBB
-	OUT Hex0
-	Call Delay
-	JUMP Finish
+;Exponentiation (0x0157) 
+LOADI 7
+OUT Ain
+LOADI 3
+OUT Bin
+OUT Exp
+IN Result
+Out Hex0
+
+Call Delay
+
+Call Begin
 	
+
 
 Delay:
 	OUT    Timer
