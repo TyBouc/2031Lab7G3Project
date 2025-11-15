@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Thu Nov 13 10:20:07 2025
+Sat Nov 15 13:36:31 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -26,12 +26,15 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
  18. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_CLSHIFT:shifter
  19. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_BUSTRI:io_bus
  20. Parameter Settings for User Entity Instance: TIMER:inst4|LPM_BUSTRI:IO_BUS
- 21. Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Mod0
- 22. Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Div0
- 23. altsyncram Parameter Settings by Entity Instance
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 21. Parameter Settings for User Entity Instance: Math_Peripheral:inst10|LPM_BUSTRI:IO_BUS
+ 22. Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Mod1
+ 23. Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Mod0
+ 24. Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Div1
+ 25. Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Div0
+ 26. altsyncram Parameter Settings by Entity Instance
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -58,17 +61,17 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 13 10:20:07 2025           ;
+; Analysis & Synthesis Status     ; Successful - Sat Nov 15 13:36:31 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; SCOMP                                           ;
 ; Top-level Entity Name           ; SCOMP_System                                    ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 258                                             ;
+; Total registers                 ; 290                                             ;
 ; Total pins                      ; 64                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 32,768                                          ;
-; Total DSP Blocks                ; 1                                               ;
+; Total DSP Blocks                ; 12                                              ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
 ; Total HSSI TX PCSs              ; 0                                               ;
@@ -171,11 +174,11 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
@@ -184,7 +187,7 @@ on the Quartus Prime software download page.
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
-;     Processors 7-10        ;   0.0%      ;
+;     Processors 7-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -193,16 +196,16 @@ on the Quartus Prime software download page.
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+----------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library  ;
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+----------+
-; HEX_DISP.vhd                     ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd                                ;          ;
-; DIG_OUT.vhd                      ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/2031Lab7G3Project/DIG_OUT.vhd                                 ;          ;
-; DIG_IN.vhd                       ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd                                  ;          ;
-; clk_div.vhd                      ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd                                 ;          ;
-; TIMER.vhd                        ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd                                   ;          ;
-; SCOMP.vhd                        ; yes             ; User VHDL File                         ; C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd                                   ;          ;
-; SCOMP_System.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP_System.bdf                            ;          ;
-; HEX_DISP_6.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP_6.bdf                              ;          ;
-; PLL_main.vhd                     ; yes             ; User Wizard-Generated File             ; C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd                                ; PLL_main ;
-; PLL_main/PLL_main_0002.v         ; yes             ; User Verilog HDL File                  ; C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v                    ; PLL_main ;
+; HEX_DISP.vhd                     ; yes             ; User VHDL File                         ; C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd                                  ;          ;
+; DIG_OUT.vhd                      ; yes             ; User VHDL File                         ; C:/GIthub Repos/2031Lab7G3Project/DIG_OUT.vhd                                   ;          ;
+; DIG_IN.vhd                       ; yes             ; User VHDL File                         ; C:/GIthub Repos/2031Lab7G3Project/DIG_IN.vhd                                    ;          ;
+; clk_div.vhd                      ; yes             ; User VHDL File                         ; C:/GIthub Repos/2031Lab7G3Project/clk_div.vhd                                   ;          ;
+; TIMER.vhd                        ; yes             ; User VHDL File                         ; C:/GIthub Repos/2031Lab7G3Project/TIMER.vhd                                     ;          ;
+; SCOMP.vhd                        ; yes             ; User VHDL File                         ; C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd                                     ;          ;
+; SCOMP_System.bdf                 ; yes             ; User Block Diagram/Schematic File      ; C:/GIthub Repos/2031Lab7G3Project/SCOMP_System.bdf                              ;          ;
+; HEX_DISP_6.bdf                   ; yes             ; User Block Diagram/Schematic File      ; C:/GIthub Repos/2031Lab7G3Project/HEX_DISP_6.bdf                                ;          ;
+; PLL_main.vhd                     ; yes             ; User Wizard-Generated File             ; C:/GIthub Repos/2031Lab7G3Project/PLL_main.vhd                                  ; PLL_main ;
+; PLL_main/PLL_main_0002.v         ; yes             ; User Verilog HDL File                  ; C:/GIthub Repos/2031Lab7G3Project/PLL_main/PLL_main_0002.v                      ; PLL_main ;
 ; altera_pll.v                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altera_pll.v          ;          ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf        ;          ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc ;          ;
@@ -213,18 +216,22 @@ on the Quartus Prime software download page.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altrom.inc            ;          ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altram.inc            ;          ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc          ;          ;
-; db/altsyncram_u134.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/2031Lab7G3Project/db/altsyncram_u134.tdf                      ;          ;
-; ProjectTest1.0.mif               ; yes             ; Auto-Found Memory Initialization File  ; C:/GaTech/ECE2031/2031Lab7G3Project/ProjectTest1.0.mif                          ;          ;
+; db/altsyncram_u134.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/altsyncram_u134.tdf                        ;          ;
+; projecttest1.0.mif               ; yes             ; Auto-Found Memory Initialization File  ; C:/GIthub Repos/2031Lab7G3Project/projecttest1.0.mif                            ;          ;
 ; lpm_clshift.tdf                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_clshift.tdf       ;          ;
 ; lpm_bustri.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_bustri.tdf        ;          ;
-; math_peripheral.vhd              ; yes             ; Auto-Found VHDL File                   ; C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd                         ;          ;
+; math_peripheral.vhd              ; yes             ; Auto-Found VHDL File                   ; C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd                           ;          ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/lpm_divide.tdf        ;          ;
 ; abs_divider.inc                  ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/abs_divider.inc       ;          ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                           ; c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/sign_div_unsign.inc   ;          ;
-; db/lpm_divide_42m.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_42m.tdf                       ;          ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/2031Lab7G3Project/db/sign_div_unsign_7kh.tdf                  ;          ;
-; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/2031Lab7G3Project/db/alt_u_div_kse.tdf                        ;          ;
-; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_1am.tdf                       ;          ;
+; db/lpm_divide_4go.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_4go.tdf                         ;          ;
+; db/abs_divider_aag.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/abs_divider_aag.tdf                        ;          ;
+; db/alt_u_div_4te.tdf             ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/alt_u_div_4te.tdf                          ;          ;
+; db/lpm_abs_nn9.tdf               ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/lpm_abs_nn9.tdf                            ;          ;
+; db/lpm_divide_c2m.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_c2m.tdf                         ;          ;
+; db/sign_div_unsign_fkh.tdf       ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/sign_div_unsign_fkh.tdf                    ;          ;
+; db/lpm_divide_1oo.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_1oo.tdf                         ;          ;
+; db/lpm_divide_9am.tdf            ; yes             ; Auto-Generated Megafunction            ; C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_9am.tdf                         ;          ;
 +----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+----------+
 
 
@@ -233,30 +240,30 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 321                                                                               ;
+; Estimate of Logic utilization (ALMs needed) ; 627                                                                               ;
 ;                                             ;                                                                                   ;
-; Combinational ALUT usage for logic          ; 452                                                                               ;
-;     -- 7 input functions                    ; 4                                                                                 ;
-;     -- 6 input functions                    ; 72                                                                                ;
-;     -- 5 input functions                    ; 165                                                                               ;
-;     -- 4 input functions                    ; 82                                                                                ;
-;     -- <=3 input functions                  ; 129                                                                               ;
+; Combinational ALUT usage for logic          ; 1007                                                                              ;
+;     -- 7 input functions                    ; 2                                                                                 ;
+;     -- 6 input functions                    ; 128                                                                               ;
+;     -- 5 input functions                    ; 273                                                                               ;
+;     -- 4 input functions                    ; 191                                                                               ;
+;     -- <=3 input functions                  ; 413                                                                               ;
 ;                                             ;                                                                                   ;
-; Dedicated logic registers                   ; 258                                                                               ;
+; Dedicated logic registers                   ; 290                                                                               ;
 ;                                             ;                                                                                   ;
 ; I/O pins                                    ; 64                                                                                ;
 ; Total MLAB memory bits                      ; 0                                                                                 ;
 ; Total block memory bits                     ; 32768                                                                             ;
 ;                                             ;                                                                                   ;
-; Total DSP Blocks                            ; 1                                                                                 ;
+; Total DSP Blocks                            ; 12                                                                                ;
 ;                                             ;                                                                                   ;
 ; Total PLLs                                  ; 1                                                                                 ;
 ;     -- PLLs                                 ; 1                                                                                 ;
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|outclk_wire[0] ;
-; Maximum fan-out                             ; 271                                                                               ;
-; Total fan-out                               ; 3239                                                                              ;
-; Average fan-out                             ; 3.78                                                                              ;
+; Maximum fan-out                             ; 296                                                                               ;
+; Total fan-out                               ; 5455                                                                              ;
+; Average fan-out                             ; 3.75                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -265,35 +272,44 @@ on the Quartus Prime software download page.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |SCOMP_System                             ; 452 (0)             ; 258 (0)                   ; 32768             ; 1          ; 64   ; 0            ; |SCOMP_System                                                                                                                        ; SCOMP_System        ; work         ;
-;    |DIG_IN:inst7|                         ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                           ; DIG_IN              ; work         ;
+; |SCOMP_System                             ; 1007 (19)           ; 290 (0)                   ; 32768             ; 12         ; 64   ; 0            ; |SCOMP_System                                                                                                                        ; SCOMP_System        ; work         ;
 ;    |DIG_OUT:inst6|                        ; 1 (1)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_OUT:inst6                                                                                                          ; DIG_OUT             ; work         ;
-;    |HEX_DISP_6:inst9|                     ; 46 (4)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                       ; HEX_DISP_6          ; work         ;
+;    |HEX_DISP_6:inst9|                     ; 47 (5)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                       ; HEX_DISP_6          ; work         ;
 ;       |HEX_DISP:inst1|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst1                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst2|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst2                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst3|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst3                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst4|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst4                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst5|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst5                                                                                        ; HEX_DISP            ; work         ;
 ;       |HEX_DISP:inst6|                    ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst6                                                                                        ; HEX_DISP            ; work         ;
-;    |Math_Peripheral:inst10|               ; 71 (27)             ; 8 (8)                     ; 0                 ; 1          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10                                                                                                 ; Math_Peripheral     ; work         ;
-;       |lpm_divide:Div0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_1am:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
-;             |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
-;       |lpm_divide:Mod0|                   ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_42m:auto_generated|  ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0|lpm_divide_42m:auto_generated                                                   ; lpm_divide_42m      ; work         ;
-;             |sign_div_unsign_7kh:divider| ; 22 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;                |alt_u_div_kse:divider|    ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0|lpm_divide_42m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
+;    |Math_Peripheral:inst10|               ; 665 (278)           ; 32 (32)                   ; 0                 ; 12         ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10                                                                                                 ; Math_Peripheral     ; work         ;
+;       |lpm_divide:Div0|                   ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_9am:auto_generated|  ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_9am:auto_generated                                                   ; lpm_divide_9am      ; work         ;
+;             |sign_div_unsign_fkh:divider| ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_9am:auto_generated|sign_div_unsign_fkh:divider                       ; sign_div_unsign_fkh ; work         ;
+;                |alt_u_div_4te:divider|    ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div0|lpm_divide_9am:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_4te:divider ; alt_u_div_4te       ; work         ;
+;       |lpm_divide:Div1|                   ; 106 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_1oo:auto_generated|  ; 106 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div1|lpm_divide_1oo:auto_generated                                                   ; lpm_divide_1oo      ; work         ;
+;             |abs_divider_aag:divider|     ; 106 (8)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div1|lpm_divide_1oo:auto_generated|abs_divider_aag:divider                           ; abs_divider_aag     ; work         ;
+;                |alt_u_div_4te:divider|    ; 82 (82)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div1|lpm_divide_1oo:auto_generated|abs_divider_aag:divider|alt_u_div_4te:divider     ; alt_u_div_4te       ; work         ;
+;                |lpm_abs_nn9:my_abs_den|   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div1|lpm_divide_1oo:auto_generated|abs_divider_aag:divider|lpm_abs_nn9:my_abs_den    ; lpm_abs_nn9         ; work         ;
+;                |lpm_abs_nn9:my_abs_num|   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Div1|lpm_divide_1oo:auto_generated|abs_divider_aag:divider|lpm_abs_nn9:my_abs_num    ; lpm_abs_nn9         ; work         ;
+;       |lpm_divide:Mod0|                   ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_c2m:auto_generated|  ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0|lpm_divide_c2m:auto_generated                                                   ; lpm_divide_c2m      ; work         ;
+;             |sign_div_unsign_fkh:divider| ; 78 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider                       ; sign_div_unsign_fkh ; work         ;
+;                |alt_u_div_4te:divider|    ; 78 (78)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod0|lpm_divide_c2m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_4te:divider ; alt_u_div_4te       ; work         ;
+;       |lpm_divide:Mod1|                   ; 125 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod1                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_4go:auto_generated|  ; 125 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod1|lpm_divide_4go:auto_generated                                                   ; lpm_divide_4go      ; work         ;
+;             |abs_divider_aag:divider|     ; 125 (16)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod1|lpm_divide_4go:auto_generated|abs_divider_aag:divider                           ; abs_divider_aag     ; work         ;
+;                |alt_u_div_4te:divider|    ; 93 (93)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod1|lpm_divide_4go:auto_generated|abs_divider_aag:divider|alt_u_div_4te:divider     ; alt_u_div_4te       ; work         ;
+;                |lpm_abs_nn9:my_abs_den|   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod1|lpm_divide_4go:auto_generated|abs_divider_aag:divider|lpm_abs_nn9:my_abs_den    ; lpm_abs_nn9         ; work         ;
+;                |lpm_abs_nn9:my_abs_num|   ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|Math_Peripheral:inst10|lpm_divide:Mod1|lpm_divide_4go:auto_generated|abs_divider_aag:divider|lpm_abs_nn9:my_abs_num    ; lpm_abs_nn9         ; work         ;
 ;    |PLL_main:inst1|                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1                                                                                                         ; PLL_main            ; pll_main     ;
 ;       |PLL_main_0002:pll_main_inst|       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst                                                                             ; PLL_main_0002       ; PLL_main     ;
 ;          |altera_pll:altera_pll_i|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i                                                     ; altera_pll          ; work         ;
-;    |SCOMP:inst|                           ; 267 (220)           ; 187 (187)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                             ; SCOMP               ; work         ;
+;    |SCOMP:inst|                           ; 232 (191)           ; 187 (187)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                             ; SCOMP               ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component                                                                             ; altsyncram          ; work         ;
 ;          |altsyncram_u134:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_u134:auto_generated                                              ; altsyncram_u134     ; work         ;
-;       |lpm_bustri:io_bus|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_bustri:io_bus                                                                                           ; lpm_bustri          ; work         ;
-;       |lpm_clshift:shifter|               ; 39 (39)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                         ; lpm_clshift         ; work         ;
-;    |TIMER:inst4|                          ; 18 (10)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER:inst4                                                                                                            ; TIMER               ; work         ;
-;       |lpm_bustri:IO_BUS|                 ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER:inst4|lpm_bustri:IO_BUS                                                                                          ; lpm_bustri          ; work         ;
+;       |lpm_clshift:shifter|               ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                         ; lpm_clshift         ; work         ;
+;    |TIMER:inst4|                          ; 18 (18)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER:inst4                                                                                                            ; TIMER               ; work         ;
 ;    |clk_div:inst5|                        ; 25 (25)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|clk_div:inst5                                                                                                          ; clk_div             ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -313,10 +329,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 ; Statistic                       ; Number Used ;
 +---------------------------------+-------------+
-; Independent 9x9                 ; 1           ;
-; Total number of DSP blocks      ; 1           ;
+; Independent 9x9                 ; 6           ;
+; Two Independent 18x18           ; 6           ;
+; Total number of DSP blocks      ; 12          ;
 ;                                 ;             ;
-; Fixed Point Unsigned Multiplier ; 1           ;
+; Fixed Point Signed Multiplier   ; 1           ;
+; Fixed Point Unsigned Multiplier ; 11          ;
 +---------------------------------+-------------+
 
 
@@ -364,16 +382,15 @@ Encoding Type:  One-Hot
 +-----------------+--------------+---------------+--------------+---------------+--------------+--------------+-------------+---------------+-----------------+----------------+---------------+---------------+----------------+--------------+-------------+--------------+---------------+--------------+----------------+-----------------+----------------+---------------+--------------+--------------+-------------+------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; SCOMP:inst|state.ex_nop                ; Lost fanout                            ;
-; SCOMP:inst|state.ex_store2             ; Stuck at GND due to stuck port data_in ;
-; TIMER:inst4|COUNT[8..15]               ; Lost fanout                            ;
-; Total Number of Removed Registers = 10 ;                                        ;
-+----------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; SCOMP:inst|state.ex_nop               ; Lost fanout                            ;
+; SCOMP:inst|state.ex_store2            ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 2 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -381,27 +398,31 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 258   ;
-; Number of registers using Synchronous Clear  ; 30    ;
+; Total registers                              ; 290   ;
+; Number of registers using Synchronous Clear  ; 38    ;
 ; Number of registers using Synchronous Load   ; 110   ;
-; Number of registers using Asynchronous Clear ; 74    ;
+; Number of registers using Asynchronous Clear ; 106   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 171   ;
+; Number of registers using Clock Enable       ; 194   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 3:1                ; 110 bits  ; 220 LEs       ; 0 LEs                ; 220 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[3][8]        ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |SCOMP_System|Math_Peripheral:inst10|Result[3] ;
-; 13:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[7]                 ;
-; 12:1               ; 16 bits   ; 128 LEs       ; 96 LEs               ; 32 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[3]                 ;
-; 12:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
+; 3:1                ; 110 bits  ; 220 LEs       ; 0 LEs                ; 220 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[2][3]         ;
+; 12:1               ; 16 bits   ; 128 LEs       ; 96 LEs               ; 32 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[4]                  ;
+; 13:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[0]                  ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 72 LEs               ; 8 LEs                  ; Yes        ; |SCOMP_System|Math_Peripheral:inst10|Result[12] ;
+; 24:1               ; 3 bits    ; 48 LEs        ; 45 LEs               ; 3 LEs                  ; Yes        ; |SCOMP_System|Math_Peripheral:inst10|Result[5]  ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 60 LEs               ; 4 LEs                  ; Yes        ; |SCOMP_System|Math_Peripheral:inst10|Result[0]  ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[15]                       ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[3]                        ;
+; 12:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -755,19 +776,75 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Math_Peripheral:inst10|LPM_BUSTRI:IO_BUS ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; LPM_WIDTH      ; 16    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                       ;
+; LPM_WIDTHD             ; 8              ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_4go ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Mod0 ;
 +------------------------+----------------+-----------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                          ;
 +------------------------+----------------+-----------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                       ;
-; LPM_WIDTHD             ; 4              ; Untyped                                       ;
+; LPM_WIDTHN             ; 8              ; Untyped                                       ;
+; LPM_WIDTHD             ; 8              ; Untyped                                       ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                       ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
-; CBXI_PARAMETER         ; lpm_divide_42m ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_c2m ; Untyped                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                ;
++------------------------+----------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Math_Peripheral:inst10|lpm_divide:Div1 ;
++------------------------+----------------+-----------------------------------------------+
+; Parameter Name         ; Value          ; Type                                          ;
++------------------------+----------------+-----------------------------------------------+
+; LPM_WIDTHN             ; 8              ; Untyped                                       ;
+; LPM_WIDTHD             ; 8              ; Untyped                                       ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                       ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                       ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_1oo ; Untyped                                       ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
@@ -783,14 +860,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+-----------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                          ;
 +------------------------+----------------+-----------------------------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                                       ;
-; LPM_WIDTHD             ; 4              ; Untyped                                       ;
+; LPM_WIDTHN             ; 8              ; Untyped                                       ;
+; LPM_WIDTHD             ; 8              ; Untyped                                       ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                       ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                       ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                       ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                       ;
-; CBXI_PARAMETER         ; lpm_divide_1am ; Untyped                                       ;
+; CBXI_PARAMETER         ; lpm_divide_9am ; Untyped                                       ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                       ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                       ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                    ;
@@ -826,40 +903,43 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 258                         ;
-;     CLR               ; 66                          ;
+; arriav_ff             ; 290                         ;
+;     CLR               ; 75                          ;
 ;     ENA               ; 42                          ;
-;     ENA CLR           ; 8                           ;
+;     ENA CLR           ; 23                          ;
+;     ENA CLR SCLR      ; 8                           ;
 ;     ENA SCLR          ; 11                          ;
 ;     ENA SLD           ; 110                         ;
 ;     SCLR              ; 19                          ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 458                         ;
-;     arith             ; 66                          ;
-;         0 data inputs ; 4                           ;
-;         1 data inputs ; 37                          ;
-;         2 data inputs ; 3                           ;
-;         5 data inputs ; 22                          ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 370                         ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 24                          ;
-;         3 data inputs ; 48                          ;
-;         4 data inputs ; 76                          ;
-;         5 data inputs ; 143                         ;
-;         6 data inputs ; 72                          ;
-;     shared            ; 18                          ;
-;         0 data inputs ; 6                           ;
-;         2 data inputs ; 6                           ;
+; arriav_lcell_comb     ; 1013                        ;
+;     arith             ; 358                         ;
+;         0 data inputs ; 46                          ;
+;         1 data inputs ; 110                         ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 6                           ;
-; arriav_mac            ; 1                           ;
+;         5 data inputs ; 116                         ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 617                         ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 99                          ;
+;         4 data inputs ; 173                         ;
+;         5 data inputs ; 157                         ;
+;         6 data inputs ; 128                         ;
+;     shared            ; 36                          ;
+;         0 data inputs ; 12                          ;
+;         2 data inputs ; 12                          ;
+;         4 data inputs ; 12                          ;
+; arriav_mac            ; 12                          ;
 ; boundary_port         ; 64                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 12.50                       ;
-; Average LUT depth     ; 4.05                        ;
+; Max LUT depth         ; 21.10                       ;
+; Average LUT depth     ; 9.57                        ;
 +-----------------------+-----------------------------+
 
 
@@ -868,7 +948,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -878,45 +958,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Nov 13 10:19:39 2025
+    Info: Processing started: Sat Nov 15 13:36:13 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file hex_disp.vhd
-    Info (12022): Found design unit 1: HEX_DISP-a File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 17
-    Info (12023): Found entity 1: HEX_DISP File: C:/GaTech/ECE2031/2031Lab7G3Project/HEX_DISP.vhd Line: 9
+    Info (12022): Found design unit 1: HEX_DISP-a File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 17
+    Info (12023): Found entity 1: HEX_DISP File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file dig_out.vhd
-    Info (12022): Found design unit 1: DIG_OUT-a File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_OUT.vhd Line: 26
-    Info (12023): Found entity 1: DIG_OUT File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_OUT.vhd Line: 16
+    Info (12022): Found design unit 1: DIG_OUT-a File: C:/GIthub Repos/2031Lab7G3Project/DIG_OUT.vhd Line: 26
+    Info (12023): Found entity 1: DIG_OUT File: C:/GIthub Repos/2031Lab7G3Project/DIG_OUT.vhd Line: 16
 Info (12021): Found 2 design units, including 1 entities, in source file dig_in.vhd
-    Info (12022): Found design unit 1: DIG_IN-a File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 20
-    Info (12023): Found entity 1: DIG_IN File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 11
+    Info (12022): Found design unit 1: DIG_IN-a File: C:/GIthub Repos/2031Lab7G3Project/DIG_IN.vhd Line: 20
+    Info (12023): Found entity 1: DIG_IN File: C:/GIthub Repos/2031Lab7G3Project/DIG_IN.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-a File: C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd Line: 26
-    Info (12023): Found entity 1: clk_div File: C:/GaTech/ECE2031/2031Lab7G3Project/clk_div.vhd Line: 11
+    Info (12022): Found design unit 1: clk_div-a File: C:/GIthub Repos/2031Lab7G3Project/clk_div.vhd Line: 26
+    Info (12023): Found entity 1: clk_div File: C:/GIthub Repos/2031Lab7G3Project/clk_div.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
-    Info (12022): Found design unit 1: TIMER-a File: C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd Line: 29
-    Info (12023): Found entity 1: TIMER File: C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd Line: 17
+    Info (12022): Found design unit 1: TIMER-a File: C:/GIthub Repos/2031Lab7G3Project/TIMER.vhd Line: 29
+    Info (12023): Found entity 1: TIMER File: C:/GIthub Repos/2031Lab7G3Project/TIMER.vhd Line: 17
 Info (12021): Found 2 design units, including 1 entities, in source file scomp.vhd
-    Info (12022): Found design unit 1: SCOMP-a File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 33
-    Info (12023): Found entity 1: SCOMP File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 16
+    Info (12022): Found design unit 1: SCOMP-a File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 33
+    Info (12023): Found entity 1: SCOMP File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 16
 Info (12021): Found 1 design units, including 1 entities, in source file scomp_system.bdf
     Info (12023): Found entity 1: SCOMP_System
 Info (12021): Found 1 design units, including 1 entities, in source file hex_disp_6.bdf
     Info (12023): Found entity 1: HEX_DISP_6
 Info (12021): Found 2 design units, including 1 entities, in source file pll_main.vhd
-    Info (12022): Found design unit 1: PLL_main-rtl File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd Line: 20
-    Info (12023): Found entity 1: PLL_main File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd Line: 11
+    Info (12022): Found design unit 1: PLL_main-rtl File: C:/GIthub Repos/2031Lab7G3Project/PLL_main.vhd Line: 20
+    Info (12023): Found entity 1: PLL_main File: C:/GIthub Repos/2031Lab7G3Project/PLL_main.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file pll_main/pll_main_0002.v
-    Info (12023): Found entity 1: PLL_main_0002 File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 2
+    Info (12023): Found entity 1: PLL_main_0002 File: C:/GIthub Repos/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 2
 Info (12127): Elaborating entity "SCOMP_System" for the top level hierarchy
 Info (12128): Elaborating entity "HEX_DISP_6" for hierarchy "HEX_DISP_6:inst9"
 Info (12128): Elaborating entity "HEX_DISP" for hierarchy "HEX_DISP_6:inst9|HEX_DISP:inst1"
 Info (12128): Elaborating entity "PLL_main" for hierarchy "PLL_main:inst1"
-Info (12128): Elaborating entity "PLL_main_0002" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst" File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main.vhd Line: 32
-Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
+Info (12128): Elaborating entity "PLL_main_0002" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst" File: C:/GIthub Repos/2031Lab7G3Project/PLL_main.vhd Line: 32
+Info (12128): Elaborating entity "altera_pll" for hierarchy "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GIthub Repos/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
-Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" File: C:/GIthub Repos/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
+Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/PLL_main/PLL_main_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -978,9 +1058,9 @@ Info (12133): Instantiated megafunction "PLL_main:inst1|PLL_main_0002:pll_main_i
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "SCOMP" for hierarchy "SCOMP:inst"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
-Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 63
+Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 63
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|altsyncram:altsyncram_component" File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 63
+Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_component" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 63
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1032,91 +1112,110 @@ Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_compon
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u134.tdf
-    Info (12023): Found entity 1: altsyncram_u134 File: C:/GaTech/ECE2031/2031Lab7G3Project/db/altsyncram_u134.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_u134 File: C:/GIthub Repos/2031Lab7G3Project/db/altsyncram_u134.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u134" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component|altsyncram_u134:auto_generated" File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 90
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 90
-Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 90
+Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 90
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 90
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 90
     Info (12134): Parameter "LPM_WIDTH" = "16"
     Info (12134): Parameter "LPM_WIDTHDIST" = "4"
     Info (12134): Parameter "LPM_SHIFTTYPE" = "arithmetic"
     Info (12134): Parameter "LPM_TYPE" = "LPM_CLSHIFT"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
-Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 114
-Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 114
-Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/SCOMP.vhd Line: 114
+Info (12128): Elaborating entity "LPM_BUSTRI" for hierarchy "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 114
+Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_BUSTRI:io_bus" File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 114
+Info (12133): Instantiated megafunction "SCOMP:inst|LPM_BUSTRI:io_bus" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/SCOMP.vhd Line: 114
     Info (12134): Parameter "LPM_WIDTH" = "16"
     Info (12134): Parameter "LPM_TYPE" = "LPM_BUSTRI"
     Info (12134): Parameter "LPM_HINT" = "UNUSED"
 Info (12128): Elaborating entity "TIMER" for hierarchy "TIMER:inst4"
-Warning (10492): VHDL Process Statement warning at TIMER.vhd(48): signal "IO_WRITE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/GaTech/ECE2031/2031Lab7G3Project/TIMER.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at TIMER.vhd(48): signal "IO_WRITE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/GIthub Repos/2031Lab7G3Project/TIMER.vhd Line: 48
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
 Info (12128): Elaborating entity "DIG_IN" for hierarchy "DIG_IN:inst7"
 Warning (12125): Using design file math_peripheral.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Math_Peripheral-rtl File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 16
-    Info (12023): Found entity 1: Math_Peripheral File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 5
+    Info (12022): Found design unit 1: Math_Peripheral-rtl File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 18
+    Info (12023): Found entity 1: Math_Peripheral File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 7
 Info (12128): Elaborating entity "Math_Peripheral" for hierarchy "Math_Peripheral:inst10"
-Warning (10036): Verilog HDL or VHDL warning at math_peripheral.vhd(17): object "x1" assigned a value but never read File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 17
-Warning (10036): Verilog HDL or VHDL warning at math_peripheral.vhd(17): object "x2" assigned a value but never read File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 17
 Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst6"
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Math_Peripheral:inst10|Mod0" File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 57
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Math_Peripheral:inst10|Div0" File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 46
-Info (12130): Elaborated megafunction instantiation "Math_Peripheral:inst10|lpm_divide:Mod0" File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 57
-Info (12133): Instantiated megafunction "Math_Peripheral:inst10|lpm_divide:Mod0" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 57
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_42m.tdf
-    Info (12023): Found entity 1: lpm_divide_42m File: C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_42m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/GaTech/ECE2031/2031Lab7G3Project/db/sign_div_unsign_7kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
-    Info (12023): Found entity 1: alt_u_div_kse File: C:/GaTech/ECE2031/2031Lab7G3Project/db/alt_u_div_kse.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "Math_Peripheral:inst10|lpm_divide:Div0" File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 46
-Info (12133): Instantiated megafunction "Math_Peripheral:inst10|lpm_divide:Div0" with the following parameter: File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 46
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1am.tdf
-    Info (12023): Found entity 1: lpm_divide_1am File: C:/GaTech/ECE2031/2031Lab7G3Project/db/lpm_divide_1am.tdf Line: 25
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[0]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst1|latched_hex[0]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[1]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst1|latched_hex[1]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[2]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst1|latched_hex[2]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[3]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst1|latched_hex[3]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[4]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst2|latched_hex[0]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[5]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst2|latched_hex[1]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[6]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst2|latched_hex[2]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[7]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst2|latched_hex[3]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "Math_Peripheral:inst10|IO_DATA[8]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst3|latched_hex[0]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "Math_Peripheral:inst10|IO_DATA[9]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst3|latched_hex[1]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/math_peripheral.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[10]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst3|latched_hex[2]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[11]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst3|latched_hex[3]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[12]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst4|latched_hex[0]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[13]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst4|latched_hex[1]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[14]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst4|latched_hex[2]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
-    Warning (13047): Converted the fan-out from the tri-state buffer "DIG_IN:inst7|IO_DATA[15]" to the node "HEX_DISP_6:inst9|HEX_DISP:inst4|latched_hex[3]" into an OR gate File: C:/GaTech/ECE2031/2031Lab7G3Project/DIG_IN.vhd Line: 16
+    Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[13]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[12]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[11]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[10]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[9]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[8]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[7]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[6]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[5]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[4]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[3]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+    Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: C:/GIthub Repos/2031Lab7G3Project/HEX_DISP.vhd Line: 24
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Math_Peripheral:inst10|Mod1" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 97
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Math_Peripheral:inst10|Mod0" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 89
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Math_Peripheral:inst10|Div1" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 81
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Math_Peripheral:inst10|Div0" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 72
+Info (12130): Elaborated megafunction instantiation "Math_Peripheral:inst10|lpm_divide:Mod1" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 97
+Info (12133): Instantiated megafunction "Math_Peripheral:inst10|lpm_divide:Mod1" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 97
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4go.tdf
+    Info (12023): Found entity 1: lpm_divide_4go File: C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_4go.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_aag.tdf
+    Info (12023): Found entity 1: abs_divider_aag File: C:/GIthub Repos/2031Lab7G3Project/db/abs_divider_aag.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4te.tdf
+    Info (12023): Found entity 1: alt_u_div_4te File: C:/GIthub Repos/2031Lab7G3Project/db/alt_u_div_4te.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_nn9.tdf
+    Info (12023): Found entity 1: lpm_abs_nn9 File: C:/GIthub Repos/2031Lab7G3Project/db/lpm_abs_nn9.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "Math_Peripheral:inst10|lpm_divide:Mod0" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 89
+Info (12133): Instantiated megafunction "Math_Peripheral:inst10|lpm_divide:Mod0" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 89
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_c2m.tdf
+    Info (12023): Found entity 1: lpm_divide_c2m File: C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_c2m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_fkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_fkh File: C:/GIthub Repos/2031Lab7G3Project/db/sign_div_unsign_fkh.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "Math_Peripheral:inst10|lpm_divide:Div1" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 81
+Info (12133): Instantiated megafunction "Math_Peripheral:inst10|lpm_divide:Div1" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 81
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1oo.tdf
+    Info (12023): Found entity 1: lpm_divide_1oo File: C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_1oo.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "Math_Peripheral:inst10|lpm_divide:Div0" File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 72
+Info (12133): Instantiated megafunction "Math_Peripheral:inst10|lpm_divide:Div0" with the following parameter: File: C:/GIthub Repos/2031Lab7G3Project/math_peripheral.vhd Line: 72
+    Info (12134): Parameter "LPM_WIDTHN" = "8"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9am.tdf
+    Info (12023): Found entity 1: lpm_divide_9am File: C:/GIthub Repos/2031Lab7G3Project/db/lpm_divide_9am.tdf Line: 25
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 9 registers lost all their fanouts during netlist optimizations.
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 5 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[8]"
-    Warning (15610): No output dependent on input pin "SW[9]"
-Info (21057): Implemented 701 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1287 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 619 logic cells
+    Info (21061): Implemented 1194 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
-    Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4999 megabytes
-    Info: Processing ended: Thu Nov 13 10:20:08 2025
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:01:02
+    Info (21062): Implemented 12 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 4990 megabytes
+    Info: Processing ended: Sat Nov 15 13:36:31 2025
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:33
 
 
